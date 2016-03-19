@@ -153,3 +153,16 @@ class Market(object):
                 denom += weight
 
         return total/denom
+        
+class MarketHistory(object):
+    def __init__(self):
+        self.markets = []
+    
+    def addNewDay(self, mkt):
+        self.markets.append(mkt)
+        
+    def getDelta(self, wgt, start=1, check_fill=False):
+        gains = []
+        for m in self.markets:
+            gains.append(m.calculate_delta(wgt, start, check_fill))
+        return gains

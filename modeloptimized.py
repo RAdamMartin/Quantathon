@@ -33,23 +33,9 @@ class PartTwoThreeWeight(sm.Weighting):
 def sharpe_ratio(gains):
     return math.sqrt(252)*sum(gains)/len(gains)/np.std(gains)
 
-def get_result_from_alphas(src, alphas):
-    mkt = sm.Market(100)
-    i = 1;
-    wgt = PartTwoThreeWeight(alphas)
-    gains = []
-    src.seek(0,0)
-    for line in src:
-        arr = line.split(', ')
-        for j in range (1, len(arr), 6):
-            mkt.update_stock(int(j/6), arr[j:j+6])
-        if i > 2:
-            mkt.set_averages()
-            #CHANGE False TO True TO CHECK IND VALUES
-            gains.append(mkt.calculate_delta(wgt,1,False))
-        i += 1
-        if i > 262:
-            break;
+def get_result_from_alphas(src, hist, wgt, alphas, start=1, check_fill=False):
+    gains = hist.getDelta(wgt(alphas), start, check_fill)
+    print(gains)
     return -sharpe_ratio(gains)
 
 def main(argv):
@@ -76,19 +62,27 @@ def main(argv):
     dst = open(outputfile, 'w')
     src = open(inputfile, 'r')
 
-    src.seek(0,0)
+    mkt = sm.Market(100)
+    hist = sm.MarketHistory()
+    i = 1;
+    for line in src:
+        arr = line.split(', ')
+        for j in range (1, len(arr), 6):
+            mkt.update_stock(int(j/6), arr[j:j+6])
+        if i > 2:
+            mkt.set_averages()
+            hist.addNewDay(mkt)
+        i += 1
+        if i >= 265: #end sample size
+            break;
+    src.close() 
+
+    wgt = PartTwoThreeWeight
     alphas = [1,1,1,1, 1,1,1,1, 1,1,1,1]
-    func = lambda x : get_result_from_alphas(src, x)
-    # alphas = [ 0.99991629,  1.00006079,  0.99992389,  0.99999325, -2.85022159,
-    #     9.39757373, -2.80218762,  0.92436028,  1.        ,  1.        ,
-    #     1.        ,  1.        ]
-#     alphas = [1.00627894 , 1.00627894 , 1.00627894 , 1.00627894 , 1.00627894 , 1.01773727,
-#   0.99461806 , 0.97485532 , 1.00627894 , 1.00627894 , 1.00627894 , 1.00627894]
-    # res = optimize.fmin(func, alphas)
+    func = lambda x : get_result_from_alphas(src, hist, wgt, x, 1, False)
     res = optimize.fmin(func=func, x0=alphas, maxiter=100)
     print(res)  
-    print(get_result_from_alphas(src, alphas))
-    src.close()
+    # print(func(alphas))
     dst.close()
 
 if __name__ == "__main__":
