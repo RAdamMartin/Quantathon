@@ -39,7 +39,7 @@ def sharpe_ratio(gains):
 def get_result_from_alphas(src, dst, alphas):
     mkt = sm.Market(100)
     i = 1;
-    wgt = PartOneWeight()
+    wgt = PartTwoThreeWeight(alphas)
     gains = []
     src.seek(0,0)
     for line in src:
@@ -68,7 +68,7 @@ def get_result_from_alphas(src, dst, alphas):
         dst.write('\n')
     
     # dst.write(str(gains)[1:-1])    
-    return -sharpe_ratio(gains)
+    return sharpe_ratio(gains)
 
 def main(argv):
 #adapted from http://www.tutorialspoint.com/python/python_command_line_arguments.htm
@@ -95,7 +95,14 @@ def main(argv):
     src = open(inputfile, 'r')
 
     src.seek(0,0)
-    alphas = [1,1,1,1, 1,1,1,1, 1,1,1,1]
+    # alphas = [1,1,1,1, 1,1,1,1, 1,1,1,1]
+#     alphas = [0.4432457, 0.92085776, -0.42230354, -0.19270864, -11.35844271,
+#   11.53977411, 0.10461944, 11.31787075, 0.69421351, 0.94783086,
+#   0.57559752, -0.12383039]
+    alphas = [ 8.77519381e+05, -9.14005195e+05, -4.27731027e+05,
+        1.45712088e+07, -1.06063059e+01, 1.26390855e+01,
+        -1.64257209e+00, 4.03828123e+01, -2.25249306e+01,
+         -2.19522184e+01, -2.18636677e+01, -2.25134671e+01]
     func = lambda x : get_result_from_alphas(src, dst, x)
     print(get_result_from_alphas(src, dst, alphas))
     src.close()
