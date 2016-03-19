@@ -78,9 +78,21 @@ def main(argv):
     src.close() 
 
     wgt = PartTwoThreeWeight
-    alphas = [1,1,1,1, 1,1,1,1, 1,1,1,1]
+    alphas = np.random.rand(12)
+    alphas = map((lambda x : 2*(x-0.5)), alphas)
+    # alphas = []
+    # bounds = []
+    # for n in range(12):
+    #     alphas[n] = 0.1
+    #     bounds[n] = (-1,1)
+    # alphas = [ -1.37873689e+00,  -2.86811840e+01,   2.06475215e+00,
+    #     -3.00192275e+01,   1.85853877e+03,   1.08544918e+03,
+    #     -2.31144825e+03,  -1.14817264e+03,   1.00000000e+00,
+    #      1.00000000e+00,   1.00000000e+00,   1.00000000e+00]
     func = lambda x : get_result_from_alphas(hist, wgt, x, 1, False)
-    res = optimize.minimize(func, alphas)
+    res = optimize.basinhopping(func=func, x0=alphas, niter=500)
+    
+    # res = optimize.minimize(fun=func, x0=alphas, method='Powell')
     print(res)  
     # print(func(alphas))
     # dst.close()

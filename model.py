@@ -44,16 +44,30 @@ def get_result_from_alphas(src, dst, alphas):
     src.seek(0,0)
     for line in src:
         arr = line.split(', ')
+        dst.write(arr[0] + ',')
         for j in range (1, len(arr), 6):
             mkt.update_stock(int(j/6), arr[j:j+6])
         if i > 2:
             mkt.set_averages()
             #CHANGE False TO True TO CHECK IND VALUES
-            gains.append(mkt.calculate_delta(wgt,0,False))
+            vals = mkt.get_delta(wgt, 0, False)
+            delta = vals[0]/vals[1]
+            dst.write(str(delta)+',')
+            gains.append(delta)
+            dst.write(str(sum(gains))+',')
+            dst.write(str(vals[1])+',')
+            dst.write(str(abs(delta)/delta)+',')
+            for w in vals[2]:
+                dst.write(str(w)+',')
+        else :
+            for n in range(104):
+                dst.write('99,')
         i += 1
         if i > 262:
             break;
-    dst.write(str(gains)[1:-1])    
+        dst.write('\n')
+    
+    # dst.write(str(gains)[1:-1])    
     return -sharpe_ratio(gains)
 
 def main(argv):
@@ -83,14 +97,6 @@ def main(argv):
     src.seek(0,0)
     alphas = [1,1,1,1, 1,1,1,1, 1,1,1,1]
     func = lambda x : get_result_from_alphas(src, dst, x)
-    # alphas = [ 0.99991629,  1.00006079,  0.99992389,  0.99999325, -2.85022159,
-    #     9.39757373, -2.80218762,  0.92436028,  1.        ,  1.        ,
-    #     1.        ,  1.        ]
-#     alphas = [1.00627894 , 1.00627894 , 1.00627894 , 1.00627894 , 1.00627894 , 1.01773727,
-#   0.99461806 , 0.97485532 , 1.00627894 , 1.00627894 , 1.00627894 , 1.00627894]
-    # res = optimize.fmin(func, alphas)
-    # res = optimize.fmin(func=func, x0=alphas, maxiter=100)
-    # print(res)  
     print(get_result_from_alphas(src, dst, alphas))
     src.close()
     dst.close()
