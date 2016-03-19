@@ -3,7 +3,7 @@
 import stockmarket as sm
 import numpy as np
 import sys, getopt, math
-from scipy import optimize 
+from scipy import optimize
 
 class PartOneWeight(sm.Weighting):
     def __init__(self):
@@ -73,25 +73,25 @@ def main(argv):
             mkt.set_averages()
             hist.addNewDay(mkt)
         i += 1
-        # if i >= 265: #end sample size
-        #     break;
+        if i >= 265: #end sample size
+            break;
     src.close() 
 
     wgt = PartTwoThreeWeight
     alphas = np.random.rand(12)
     alphas = map((lambda x : 2*(x-0.5)), alphas)
     # alphas = []
-    # bounds = []
-    # for n in range(12):
-    #     alphas[n] = 0.1
-    #     bounds[n] = (-1,1)
+    bounds = []
+    for n in range(12):
+        # alphas[n] = 0.1
+        bounds.append((-10,10))
     # alphas = [ -1.37873689e+00,  -2.86811840e+01,   2.06475215e+00,
     #     -3.00192275e+01,   1.85853877e+03,   1.08544918e+03,
     #     -2.31144825e+03,  -1.14817264e+03,   1.00000000e+00,
     #      1.00000000e+00,   1.00000000e+00,   1.00000000e+00]
-    func = lambda x : get_result_from_alphas(hist, wgt, x, 1, False)
-    res = optimize.basinhopping(func=func, x0=alphas, niter=500)
-    
+    func = lambda x : get_result_from_alphas(hist, wgt, x, 1, True)
+    # res = optimize.basinhopping(func=func, x0=alphas, niter=200, minimizer_kwargs={"method": "Powell"})
+    res = de.differential_evolution(func, bounds)
     # res = optimize.minimize(fun=func, x0=alphas, method='Powell')
     print(res)  
     # print(func(alphas))
