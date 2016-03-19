@@ -22,8 +22,8 @@ class PartTwoThreeWeight(sm.Weighting):
         roo = (stk.roo( 0)-mkt.AvrROO) / mkt.n
         roc = (stk.roc(-1)-mkt.AvrROC) / mkt.n
         rco = (stk.rco( 0)-mkt.AvrRCO) / mkt.n
-        tvl = (stk.tvl(-1)-mkt.AvrTVL) / mkt.n
-        rvp = (stk.rvp(-1)-mkt.AvrRVP) / mkt.n
+        tvl = (stk.tvl(-1)-stk.AvrTVL) / mkt.n
+        rvp = (stk.rvp(-1)-stk.AvrRVP) / mkt.n
         weight += (self.alphas[0] + self.alphas[4]*tvl + self.alphas[ 8]*rvp) * rcc
         weight += (self.alphas[1] + self.alphas[5]*tvl + self.alphas[ 9]*rvp) * roo
         weight += (self.alphas[2] + self.alphas[6]*tvl + self.alphas[10]*rvp) * roc
@@ -31,17 +31,13 @@ class PartTwoThreeWeight(sm.Weighting):
         return weight
 
 def sharpe_ratio(gains):
-    if np.std(gains) == 0:
-        print(gains)
-        print ('AAAAAAAAAAAAAAAAAAAAAAA')
-    elif len(gains) == 0:
-        print('BBBBBBBBBBBBBBBBBBBBBBBBBb')
+    print('ret: ' + str(sum(gains)/len(gains)))
+    print('std: '+str(np.std(gains)))
     return math.sqrt(252)*sum(gains)/len(gains)/np.std(gains)
 
 def get_result_from_alphas(src, hist, wgt, alphas, start=1, check_fill=False):
     gains = hist.getDelta(wgt(alphas), start, check_fill)
-    print(len(gains))
-    print(alphas)
+    # print(alphas)
     return -sharpe_ratio(gains)
 
 def main(argv):
@@ -62,10 +58,10 @@ def main(argv):
             inputfile = arg
         elif opt in ("-o", "--ofile"):
             outputfile = arg
-    print('Input file is', inputfile)
-    print('Output file is', outputfile)
+    # print('Input file is', inputfile)
+    # print('Output file is', outputfile)
 
-    dst = open(outputfile, 'w')
+    # dst = open(outputfile, 'w')
     src = open(inputfile, 'r')
 
     mkt = sm.Market(100)
@@ -86,10 +82,10 @@ def main(argv):
     wgt = PartTwoThreeWeight
     alphas = [1,1,1,1, 1,1,1,1, 1,1,1,1]
     func = lambda x : get_result_from_alphas(src, hist, wgt, x, 1, False)
-    res = optimize.minimize(func, alphas)
-    print(res)  
-    # print(func(alphas))
-    dst.close()
+    # res = optimize.minimize(func, alphas)
+    # print(res)  
+    print(func(alphas))
+    # dst.close()
 
 if __name__ == "__main__":
     main(sys.argv[1:])

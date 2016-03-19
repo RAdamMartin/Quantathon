@@ -39,10 +39,24 @@ class Stock(object):
     def __init__(self, sc=0):
         self.cur  = Ticker()
         self.prev = Ticker()
+        self.tvl_arr = []
+        self.rvp_arr = []
+        self.AvrTVL = 0
+        self.AvrRVP = 0
         
     def set_vals(self, arr):
         self.prev = self.cur
         self.cur.set_vals(arr)
+        
+        self.tvl_arr.append(self.tvl())
+        self.rvp_arr.append(self.rvp())
+        if len(self.tvl_arr) > 200:
+            self.tvl_arr.pop(0)
+        if len(self.rvp_arr) > 200:
+            self.rvp_arr.pop(0)
+            
+        self.AvrTVL = sum(self.tvl_arr)/len(self.tvl_arr)
+        self.AvrRVP = sum(self.rvp_arr)/len(self.rvp_arr)
 
     def rcc(self, t=0):
         tick = self.cur
@@ -105,8 +119,6 @@ class Market(object):
         self.AvrROC = 0
         self.AvrRCO = 0
         self.AvrRCC = 0
-        self.AvrTVL = 0
-        self.AvrRVP = 0
         for i in range(n):
             self.stocks.append(Stock(0))
             self.weights.append(0)
@@ -123,21 +135,15 @@ class Market(object):
         self.AvrROC = 0
         self.AvrRCO = 0
         self.AvrRCC = 0
-        self.AvrTVL = 0
-        self.AvrRVP = 0
         for s in self.stocks:
             self.AvrROO = s.roo()
             self.AvrROC = s.roc(-1)
             self.AvrRCO = s.rco()
             self.AvrRCC = s.rcc(-1)
-            self.AvrTVL = s.tvl(-1)
-            self.AvrRVP = s.rvp(-1)
         self.AvrROO /= self.n
         self.AvrROC /= self.n
         self.AvrRCO /= self.n
         self.AvrRCC /= self.n
-        self.AvrTVL /= self.n
-        self.AvrRVP /= self.n
 
     def calculate_delta(self, weighter, start=1, check_fill=False):
         total = 0
