@@ -59,6 +59,8 @@ def get_result_from_alphas(src, dst, alphas):
             dst.write(str(abs(delta)/delta)+',')
             for w in vals[2]:
                 dst.write(str(w)+',')
+            for d in vals[3]:
+                dst.write(str(d)+',')
         else :
             for n in range(104):
                 dst.write('99,')

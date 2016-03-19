@@ -166,6 +166,7 @@ class Market(object):
         total = 0
         denom = 0
         weights = []
+        deltas = []
         for i in range(self.n):
             stk = self.stocks[i]
             delta = stk.roc()
@@ -173,12 +174,13 @@ class Market(object):
                 delta = stk.rcc()
             weight = weighter.get_weight(self, stk)
             weights.append(weight)
+            deltas.append(delta)
             ind = stk.ind()
             if (not check_fill) or (ind*weight >= 0) : 
                 total += weight*delta
                 denom += abs(weight)
 
-        return (total, denom, weights)
+        return (total, denom, weights, deltas)
         
 class MarketHistory(object):
     def __init__(self):
