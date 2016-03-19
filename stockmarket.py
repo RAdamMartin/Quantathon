@@ -1,6 +1,7 @@
 from abc import ABCMeta
 import numpy as np
 import math
+import copy
 
 class Ticker(object):
     def __init__(self):
@@ -159,7 +160,7 @@ class MarketHistory(object):
         self.markets = []
     
     def addNewDay(self, mkt):
-        self.markets.append(mkt)
+        self.markets.append(copy.deepcopy(mkt))
         
     def getDelta(self, wgt, start=1, check_fill=False):
         gains = []

@@ -31,11 +31,17 @@ class PartTwoThreeWeight(sm.Weighting):
         return weight
 
 def sharpe_ratio(gains):
+    if np.std(gains) == 0:
+        print(gains)
+        print ('AAAAAAAAAAAAAAAAAAAAAAA')
+    elif len(gains) == 0:
+        print('BBBBBBBBBBBBBBBBBBBBBBBBBb')
     return math.sqrt(252)*sum(gains)/len(gains)/np.std(gains)
 
 def get_result_from_alphas(src, hist, wgt, alphas, start=1, check_fill=False):
     gains = hist.getDelta(wgt(alphas), start, check_fill)
-    print(gains)
+    print(len(gains))
+    print(alphas)
     return -sharpe_ratio(gains)
 
 def main(argv):
@@ -80,7 +86,7 @@ def main(argv):
     wgt = PartTwoThreeWeight
     alphas = [1,1,1,1, 1,1,1,1, 1,1,1,1]
     func = lambda x : get_result_from_alphas(src, hist, wgt, x, 1, False)
-    res = optimize.fmin(func=func, x0=alphas, maxiter=100)
+    res = optimize.minimize(func, alphas)
     print(res)  
     # print(func(alphas))
     dst.close()
