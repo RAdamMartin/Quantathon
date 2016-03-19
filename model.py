@@ -50,7 +50,7 @@ def get_result_from_alphas(src, dst, alphas):
         if i > 2:
             mkt.set_averages()
             #CHANGE False TO True TO CHECK IND VALUES
-            vals = mkt.get_delta(wgt, 0, False)
+            vals = mkt.get_delta(wgt, 1, False)
             delta = vals[0]/vals[1]
             dst.write(str(delta)+',')
             gains.append(delta)
@@ -101,10 +101,10 @@ def main(argv):
 #     alphas = [0.4432457, 0.92085776, -0.42230354, -0.19270864, -11.35844271,
 #   11.53977411, 0.10461944, 11.31787075, 0.69421351, 0.94783086,
 #   0.57559752, -0.12383039]
-    alphas = [ 8.77519381e+05, -9.14005195e+05, -4.27731027e+05,
-        1.45712088e+07, -1.06063059e+01, 1.26390855e+01,
-        -1.64257209e+00, 4.03828123e+01, -2.25249306e+01,
-         -2.19522184e+01, -2.18636677e+01, -2.25134671e+01]
+    alphas = [-8.77519381e+05, 9.14005195e+05, 4.27731027e+05,
+        -1.45712088e+07, 1.06063059e+01, -1.26390855e+01,
+        1.64257209e+00, -4.03828123e+01, -2.25249306e+01,
+         2.19522184e+01, 2.18636677e+01, 2.25134671e+01]
     func = lambda x : get_result_from_alphas(src, dst, x)
     print(get_result_from_alphas(src, dst, alphas))
     src.close()
