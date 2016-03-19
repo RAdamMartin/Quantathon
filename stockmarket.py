@@ -136,10 +136,10 @@ class Market(object):
         self.AvrRCO = 0
         self.AvrRCC = 0
         for s in self.stocks:
-            self.AvrROO = s.roo()
-            self.AvrROC = s.roc(-1)
-            self.AvrRCO = s.rco()
-            self.AvrRCC = s.rcc(-1)
+            self.AvrROO += s.roo()
+            self.AvrROC += s.roc(-1)
+            self.AvrRCO += s.rco()
+            self.AvrRCC += s.rcc(-1)
         self.AvrROO /= self.n
         self.AvrROC /= self.n
         self.AvrRCO /= self.n
