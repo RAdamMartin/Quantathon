@@ -63,8 +63,8 @@ def get_result_from_alphas(src, dst, alphas):
             for n in range(104):
                 dst.write('99,')
         i += 1
-        if i > 262:
-            break;
+        # if i > 262:
+        #     break;
         dst.write('\n')
     
     # dst.write(str(gains)[1:-1])    
