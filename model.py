@@ -10,7 +10,7 @@ class PartOneWeight(sm.Weighting):
         pass
     
     def get_weight(self, mkt, stk, n=100):
-        return -(1/n)*(stk.rcc()-mkt.AvrRCC)
+        return -(stk.rcc(-1)-mkt.AvrRCC)/n
         
 class PartTwoThreeWeight(sm.Weighting):
     def __init__(self, alphas):
@@ -36,10 +36,10 @@ def sharpe_ratio(gains):
     print('std: '+str(np.std(gains)))
     return math.sqrt(252)*sum(gains)/len(gains)/np.std(gains)
 
-def get_result_from_alphas(src, alphas):
+def get_result_from_alphas(src, dst, alphas):
     mkt = sm.Market(100)
     i = 1;
-    wgt = PartTwoThreeWeight(alphas)
+    wgt = PartOneWeight()
     gains = []
     src.seek(0,0)
     for line in src:
@@ -49,10 +49,11 @@ def get_result_from_alphas(src, alphas):
         if i > 2:
             mkt.set_averages()
             #CHANGE False TO True TO CHECK IND VALUES
-            gains.append(mkt.calculate_delta(wgt,1,False))
+            gains.append(mkt.calculate_delta(wgt,0,False))
         i += 1
         if i > 262:
             break;
+    dst.write(str(gains)[1:-1])    
     return -sharpe_ratio(gains)
 
 def main(argv):
@@ -81,7 +82,7 @@ def main(argv):
 
     src.seek(0,0)
     alphas = [1,1,1,1, 1,1,1,1, 1,1,1,1]
-    func = lambda x : get_result_from_alphas(src, x)
+    func = lambda x : get_result_from_alphas(src, dst, x)
     # alphas = [ 0.99991629,  1.00006079,  0.99992389,  0.99999325, -2.85022159,
     #     9.39757373, -2.80218762,  0.92436028,  1.        ,  1.        ,
     #     1.        ,  1.        ]
@@ -90,7 +91,7 @@ def main(argv):
     # res = optimize.fmin(func, alphas)
     # res = optimize.fmin(func=func, x0=alphas, maxiter=100)
     # print(res)  
-    print(get_result_from_alphas(src, alphas))
+    print(get_result_from_alphas(src, dst, alphas))
     src.close()
     dst.close()
 
