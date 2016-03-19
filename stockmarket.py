@@ -143,7 +143,7 @@ class Market(object):
         denom = 0
         for i in range(self.n):
             stk = self.stocks[i]
-            delta = stk.rco()
+            delta = stk.roc()
             if start == 0 :
                 delta = stk.rcc()
             weight = weighter.get_weight(self, stk)
