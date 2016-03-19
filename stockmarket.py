@@ -157,7 +157,7 @@ class Market(object):
             ind = stk.ind()
             if (not check_fill) or (ind*weight >= 0) : 
                 total += weight*delta
-                denom += weight
+                denom += math.abs(weight)
 
         return total/denom
         
