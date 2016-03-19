@@ -1,4 +1,6 @@
 from abc import ABCMeta
+import numpy as np
+import math
 
 class Ticker(object):
     def __init__(self):
@@ -31,6 +33,8 @@ class Ticker(object):
                 str(self.ind)  
 
 class Stock(object):
+    rvp_const = 1/4/np.log(2)
+    
     def __init__(self, sc=0):
         self.cur  = Ticker()
         self.prev = Ticker()
@@ -74,6 +78,13 @@ class Stock(object):
         
         return tick.tvl  
         
+    def rvp(self, t=0):
+        tick = self.cur
+        if t == -1:
+            tick = self.prev
+        
+        return self.rvp_const*math.pow(np.log(tick.sh)-np.log(tick.sl),2)
+        
     def ind(self):
         return self.cur.ind    
             
@@ -83,21 +94,6 @@ class Weighting(object):
 
     def get_weight(self, mkt, stk, n):
         pass
-        
-class PartOneWeight(Weighting):
-    def __init__(self):
-        pass
-    
-    def get_weight(self, mkt, stk, n=100):
-        return -(1/n)*(stk.roc()-mkt.AvrRCC)
-        
-class PartTwoThreeWeight(Weighting):
-    def __init__(self, alphas):
-        self.alphas = alphas
-    
-    def get_weight(self, mkt, stk, n=100):
-        weight = 0;
-        return weight
         
 class Market(object):
     def __init__(self, n=100):
@@ -134,7 +130,7 @@ class Market(object):
             self.AvrRCO = s.rco()
             self.AvrRCC = s.rcc(-1)
             self.AvrTVL = s.tvl(-1)
-            # self.AvrRVP = 0
+            self.AvrRVP = s.rvp(-1)
         self.AvrROO /= self.n
         self.AvrROC /= self.n
         self.AvrRCO /= self.n
