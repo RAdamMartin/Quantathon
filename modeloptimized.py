@@ -35,9 +35,9 @@ def sharpe_ratio(gains):
     print('std: '+str(np.std(gains)))
     return math.sqrt(252)*sum(gains)/len(gains)/np.std(gains)
 
-def get_result_from_alphas(src, hist, wgt, alphas, start=1, check_fill=False):
+def get_result_from_alphas(hist, wgt, alphas, start=1, check_fill=False):
     gains = hist.getDelta(wgt(alphas), start, check_fill)
-    # print(alphas)
+    print(gains)
     return -sharpe_ratio(gains)
 
 def main(argv):
@@ -75,16 +75,16 @@ def main(argv):
             mkt.set_averages()
             hist.addNewDay(mkt)
         i += 1
-        if i >= 265: #end sample size
-            break;
+        # if i >= 265: #end sample size
+        #     break;
     src.close() 
 
     wgt = PartTwoThreeWeight
     alphas = [1,1,1,1, 1,1,1,1, 1,1,1,1]
-    func = lambda x : get_result_from_alphas(src, hist, wgt, x, 1, False)
-    # res = optimize.minimize(func, alphas)
-    # print(res)  
-    print(func(alphas))
+    func = lambda x : get_result_from_alphas(hist, wgt, x, 1, False)
+    res = optimize.minimize(func, alphas)
+    print(res)  
+    # print(func(alphas))
     # dst.close()
 
 if __name__ == "__main__":

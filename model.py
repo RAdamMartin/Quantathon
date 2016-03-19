@@ -22,8 +22,8 @@ class PartTwoThreeWeight(sm.Weighting):
         roo = (stk.roo( 0)-mkt.AvrROO) / mkt.n
         roc = (stk.roc(-1)-mkt.AvrROC) / mkt.n
         rco = (stk.rco( 0)-mkt.AvrRCO) / mkt.n
-        tvl = (stk.tvl(-1)-mkt.AvrTVL) / mkt.n
-        rvp = (stk.rvp(-1)-mkt.AvrRVP) / mkt.n
+        tvl = (stk.tvl(-1)-stk.AvrTVL) / mkt.n
+        rvp = (stk.rvp(-1)-stk.AvrRVP) / mkt.n
         weight += (self.alphas[0] + self.alphas[4]*tvl + self.alphas[ 8]*rvp) * rcc
         weight += (self.alphas[1] + self.alphas[5]*tvl + self.alphas[ 9]*rvp) * roo
         weight += (self.alphas[2] + self.alphas[6]*tvl + self.alphas[10]*rvp) * roc
@@ -31,6 +31,9 @@ class PartTwoThreeWeight(sm.Weighting):
         return weight
 
 def sharpe_ratio(gains):
+    print(gains)
+    print('ret: ' + str(sum(gains)/len(gains)))
+    print('std: '+str(np.std(gains)))
     return math.sqrt(252)*sum(gains)/len(gains)/np.std(gains)
 
 def get_result_from_alphas(src, alphas):
@@ -85,8 +88,8 @@ def main(argv):
 #     alphas = [1.00627894 , 1.00627894 , 1.00627894 , 1.00627894 , 1.00627894 , 1.01773727,
 #   0.99461806 , 0.97485532 , 1.00627894 , 1.00627894 , 1.00627894 , 1.00627894]
     # res = optimize.fmin(func, alphas)
-    res = optimize.fmin(func=func, x0=alphas, maxiter=100)
-    print(res)  
+    # res = optimize.fmin(func=func, x0=alphas, maxiter=100)
+    # print(res)  
     print(get_result_from_alphas(src, alphas))
     src.close()
     dst.close()

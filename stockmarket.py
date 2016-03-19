@@ -45,7 +45,7 @@ class Stock(object):
         self.AvrRVP = 0
         
     def set_vals(self, arr):
-        self.prev = self.cur
+        self.prev = copy.deepcopy(self.cur)
         self.cur.set_vals(arr)
         
         self.tvl_arr.append(self.tvl())
@@ -157,7 +157,7 @@ class Market(object):
             ind = stk.ind()
             if (not check_fill) or (ind*weight >= 0) : 
                 total += weight*delta
-                denom += math.abs(weight)
+                denom += abs(weight)
 
         return total/denom
         
