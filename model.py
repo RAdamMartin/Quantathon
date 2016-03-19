@@ -3,6 +3,7 @@
 import stockmarket as sm
 import numpy as np
 import sys, getopt, math
+from scipy import optimize 
 
 class PartOneWeight(sm.Weighting):
     def __init__(self):
@@ -32,6 +33,23 @@ class PartTwoThreeWeight(sm.Weighting):
 def sharpe_ratio(gains):
     return math.sqrt(252)*sum(gains)/len(gains)/np.std(gains)
 
+def get_result_from_alphas(src, alphas):
+    mkt = sm.Market(100)
+    i = 1;
+    wgt = PartTwoThreeWeight(alphas)
+    gains = []
+    src.seek(0,0)
+    for line in src:
+        arr = line.split(', ')
+        for j in range (1, len(arr), 6):
+            mkt.update_stock(int(j/6), arr[j:j+6])
+        if i > 2:
+            mkt.set_averages()
+            #CHANGE False TO True TO CHECK IND VALUES
+            gains.append(mkt.calculate_delta(wgt,1,False))
+        i += 1
+    return -sharpe_ratio(gains)
+
 def main(argv):
 #adapted from http://www.tutorialspoint.com/python/python_command_line_arguments.htm
     inputfile = ''
@@ -56,28 +74,38 @@ def main(argv):
     dst = open(outputfile, 'w')
     src = open(inputfile, 'r')
 
-    mkt = sm.Market(100)
-    i = 1;
-    #SET WEIGHTINGS HERE
-    alphas = np.random.rand(12)
-    #alphas = [1,1,1,1, 0,0,0,0, 0,0,0,0]
-    wgt = PartTwoThreeWeight(alphas)
-    gains = []
-    for line in src:
-        arr = line.split(', ')
-        for j in range (1, len(arr), 6):
-            mkt.update_stock(int(j/6), arr[j:j+6])
-        if i > 2:
-            mkt.set_averages()
-            #CHANGE False TO True TO CHECK IND VALUES
-            gains.append(mkt.calculate_delta(wgt,1,False))
-        i += 1
+    # mkt = sm.Market(100)
+    # i = 1;
+    # #SET WEIGHTINGS HERE
+    # alphas = np.random.rand(12)
+    # alphas = [1,1,1,1, 1,1,1,1, 1,1,1,1]
+    # wgt = PartTwoThreeWeight(alphas)
+    # gains = []
+    # for line in src:
+    #     arr = line.split(', ')
+    #     for j in range (1, len(arr), 6):
+    #         mkt.update_stock(int(j/6), arr[j:j+6])
+    #     if i > 2:
+    #         mkt.set_averages()
+    #         #CHANGE False TO True TO CHECK IND VALUES
+    #         gains.append(mkt.calculate_delta(wgt,1,False))
+    #     i += 1
     
+    # src.seek(0,0)
+    # for a in alphas:
+    #     dst.write(str(a)+',')
+    # dst.write(str(sharpe_ratio(gains))+'\n')  
+    
+    # for n in range(12):
     src.seek(0,0)
-    for a in alphas:
-        dst.write(str(a)+',')
-    dst.write(str(sharpe_ratio(gains))+'\n')   
-        
+    # alphas = np.ndarray(shape=(12), dtype=float)
+    # for i in range(12):
+    #     alphas[i] = 1
+    alphas = [1,1,1,1, 1,1,1,1, 1,1,1,1]
+    func = lambda x : get_result_from_alphas(src, x)
+    res = optimize.minimize(func, alphas)
+    print(res)
+    # get_result_from_alphas(src, alphas)  
     src.close()
     dst.close()
     
