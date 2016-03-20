@@ -42,6 +42,10 @@ class PartFourWeight(sm.Weighting):
         weight += (self.alphas[1] + self.alphas[5]*tvl + self.alphas[ 9]*rvp) * roo
         weight += (self.alphas[2] + self.alphas[6]*tvl + self.alphas[10]*rvp) * roc
         weight += (self.alphas[3] + self.alphas[7]*tvl + self.alphas[11]*rvp) * rco
+        # weight += (self.alphas[0] + self.alphas[4]*tvl) * rcc
+        # weight += (self.alphas[1] + self.alphas[5]*tvl) * roo
+        # weight += (self.alphas[2] + self.alphas[6]*tvl) * roc
+        # weight += (self.alphas[3] + self.alphas[7]*tvl) * rco
         # weight += self.alphas[12]*tvl/stk.AvrTVL
         # weight += self.alphas[13]*stk.rco(0)
         # weight += self.alphas[13]*rvp/stk.AvrRVP

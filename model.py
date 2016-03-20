@@ -19,11 +19,22 @@ def get_result_from_alphas(src, dst, alphas):
     end = 500
     mkt = sm.Market(100)
     i = 1;
-    wgt = wgts.PartTwoThreeWeight(alphas)
+    # wgt = wgts.PartTwoThreeWeight(alphas)
     # wgt = wgts.EqualWeight()
-    # wgt = wgts.PartFourWeight(alphas)
+    wgt = wgts.PartFourWeight(alphas)
+    # wgt = wgts.PartOneWeight()
     gains = []
     src.seek(0,0)
+    dst.write('date,')
+    dst.write('rp,')
+    dst.write('rp to date,')
+    dst.write('sum of abs(fill*weight),')
+    dst.write('sum of fill*weight,')
+    dst.write('up or down,')
+    for n in range(100):
+        dst.write(str(n)+',')
+    dst.write('\n')
+    
     for line in src:
         if i >= start:
             arr = line.split(', ')
@@ -49,7 +60,7 @@ def get_result_from_alphas(src, dst, alphas):
             for d in vals[3]:
                 dst.write(str(d)+',')
         else :
-            for n in range(104):
+            for n in range(105):
                 dst.write('99,')
         i += 1
         # if i > end:
@@ -125,9 +136,7 @@ def main(argv):
     # alphas = [1.8782638384e+15,-1.76310246294e+15,2.22561122593e+15,-5.09259689959e+20,
     #         4.94094681408e+13,-2.63145299567e+13,-8.05466827805e+13,8.51677955484e+14,
     #         4849677516.5,4849677065.54,4849676794.55,4849677707.27] #0.8707
-    alphas = [187.82638384,-176.310246294,222.561122593,-50925968.9959,
-            4.94094681408,-2.63145299567,-8.05466827805,85.1677955484,
-            0.00048496775165,0.000484967706554,0.000484967679455,0.000484967770727] #0.8707
+    alphas = [-12305744.8561,17114633.1908,1384387.44545,-204039650.192,65.9194844093,-197.737055601,82.0833150333,462.416189737,178.761685525,137.320866048,451.038278764,-350.021344633] #0.898
    
     
     #part 4

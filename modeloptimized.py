@@ -64,7 +64,7 @@ def main(argv):
     src.close() 
 
     wgt = wgts.PartFourWeight
-    alphas = np.random.rand(12)
+    alphas = np.random.rand(8)
     alphas = map((lambda x : 1000*(x-0.5)), alphas)
     # alphas = [-8.77519381e+05, 9.14005195e+05, 4.27731027e+05,
     #     -1.45712088e+07, 1.06063059e+01, -1.26390855e+01,
@@ -85,7 +85,7 @@ def main(argv):
     #     -3.00192275e+01,   1.85853877e+03,   1.08544918e+03,
     #     -2.31144825e+03,  -1.14817264e+03,   1.00000000e+00,
     #      1.00000000e+00,   1.00000000e+00,   1.00000000e+00]
-    func = lambda x : get_result_from_alphas(hist, wgt, x, start=1, check_fill=True, exclude_inds=True)
+    func = lambda x : get_result_from_alphas(hist, wgt, x, start=1, check_fill=True, exclude_inds=False)
     res = optimize.basinhopping(func=func, x0=alphas, niter=40, niter_success=10, minimizer_kwargs={"method": "Powell", "options": {"maxiter":100}})
     # res = optimize.differential_evolution(func, bounds)
     # res = optimize.minimize(fun=func, x0=alphas, method='Powell', maxiter=50)
