@@ -43,6 +43,7 @@ class Stock(object):
         self.rvp_arr = []
         self.AvrTVL = 0
         self.AvrRVP = 0
+        self.excluded = False
         
     def set_vals(self, arr):
         self.prev = copy.deepcopy(self.cur)
@@ -130,24 +131,38 @@ class Market(object):
         for s in self.stocks:
             print(s.cur)
 
-    def set_averages(self):
+    def set_averages(self, exclude_inds=False):
         self.AvrROO = 0
         self.AvrROC = 0
         self.AvrRCO = 0
         self.AvrRCC = 0
         for s in self.stocks:
-            self.AvrROO += s.roo()
-            self.AvrROC += s.roc(-1)
-            self.AvrRCO += s.rco()
-            self.AvrRCC += s.rcc(-1)
+            if ((not exclude_inds) or (not s.excluded)):
+                self.AvrROO += s.roo()
+                self.AvrROC += s.roc(-1)
+                self.AvrRCO += s.rco()
+                self.AvrRCC += s.rcc(-1)
         self.AvrROO /= self.n
         self.AvrROC /= self.n
         self.AvrRCO /= self.n
         self.AvrRCC /= self.n
 
-    def calculate_delta(self, weighter, start=1, check_fill=False):
+    def calculate_delta(self, weighter, start=1, check_fill=False, exclude_inds=False):
         total = 0
         denom = 0
+        if(exclude_inds):
+            for i in range(self.n):
+                stk = self.stocks[i]
+                delta = stk.roc()
+                if start == 0 :
+                    delta = stk.rcc()
+                weight = weighter.get_weight(self, stk)
+                ind = stk.ind()
+                if (ind*weight > 0):
+                    stk.excluded = False
+                else:
+                    stk.excluded = True
+                    
         for i in range(self.n):
             stk = self.stocks[i]
             delta = stk.roc()
@@ -176,8 +191,6 @@ class Market(object):
             weights.append(weight)
             deltas.append(delta)
             ind = stk.ind()
-            if (ind == 0):
-                print("CRAP AT " + str(i))
             if (not check_fill) or (ind*weight > 0) : 
                 total += weight*delta
                 denom += abs(weight)
@@ -190,8 +203,8 @@ class MarketHistory(object):
     def addNewDay(self, mkt):
         self.markets.append(copy.deepcopy(mkt))
         
-    def getDelta(self, wgt, start=1, check_fill=False):
+    def getDelta(self, wgt, start=1, check_fill=False, exclude_inds=False):
         gains = []
         for m in self.markets:
-            gains.append(m.calculate_delta(wgt, start, check_fill))
+            gains.append(m.calculate_delta(wgt, start, check_fill, exclude_inds))
         return gains
