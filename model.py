@@ -12,6 +12,13 @@ class PartOneWeight(sm.Weighting):
     def get_weight(self, mkt, stk, n=100):
         return -(stk.rcc(-1)-mkt.AvrRCC)/n
         
+class EqualWeight(sm.Weighting):
+    def __init__(self):
+        pass
+        
+    def get_weight(self, mkt, stk, n=100):
+        return 1
+        
 class PartTwoThreeWeight(sm.Weighting):
     def __init__(self, alphas):
         self.alphas = alphas
@@ -41,7 +48,8 @@ def get_result_from_alphas(src, dst, alphas):
     end = 500
     mkt = sm.Market(100)
     i = 1;
-    wgt = PartTwoThreeWeight(alphas)
+    # wgt = PartTwoThreeWeight(alphas)
+    wgt = EqualWeight()
     gains = []
     src.seek(0,0)
     for line in src:
@@ -121,9 +129,12 @@ def main(argv):
 #     alphas = [1.23087264e+14 , -1.49770873e+14 ,  2.24203908e+14 , -1.56085359e+19,
 #    2.51091012e+11 , -1.58643820e+12 , -1.97548916e+12 ,  9.95654809e+12,
 #    4.73634191e+11  , 4.73634191e+11,   4.73634191e+11  , 4.73634191e+11]
-    alphas = [2.62005319e+12 , -3.18804433e+12 ,  4.77243661e+12,  -3.32245539e+17,
-   3.68097572e+10 , -3.37691517e+10 , -4.20505464e+10 ,  5.87163515e+11,
-   1.00818455e+10 ,  1.00818455e+10  , 1.00818455e+10  , 1.00818455e+10] #0.87 Powell bins
+#     alphas = [1.41538746e+12 , -1.72222380e+12  , 2.57813351e+12 , -1.79483444e+17,
+#    1.98851186e+10 , -1.82425433e+10 , -2.27162625e+10 ,  3.17193513e+11,
+#    5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09] #0.87 Powell bins
+    alphas = [1.41538746e+12 , -1.72222380e+12 ,  2.57813351e+12 , -1.79483444e+17,
+   1.98851186e+10 , -1.82425433e+10 , -2.27162625e+10 ,  3.17193513e+11,
+   5.44634656e+09 ,  5.44634657e+09 ,  5.44634656e+09  , 5.44634657e+09]
     func = lambda x : get_result_from_alphas(src, dst, x)
     print(get_result_from_alphas(src, dst, alphas))
     src.close()
