@@ -155,7 +155,7 @@ class Market(object):
                 delta = stk.rcc()
             weight = weighter.get_weight(self, stk)
             ind = stk.ind()
-            if (not check_fill) or (ind*weight >= 0) : 
+            if (not check_fill) or (ind*weight > 0) : 
                 total += weight*delta
                 denom += abs(weight)
 
@@ -167,6 +167,7 @@ class Market(object):
         denom = 0
         weights = []
         deltas = []
+        blocked = 0
         for i in range(self.n):
             stk = self.stocks[i]
             delta = stk.roc()
@@ -179,7 +180,11 @@ class Market(object):
             if (not check_fill) or (ind*weight > 0) : 
                 total += weight*delta
                 denom += abs(weight)
-
+            else :
+                blocked += weight*delta
+                print("Blocked " + str(i) + " with weight " + str(weight) + " delta :" + str(delta))
+            
+        print("\tTotal blockage: " + str(blocked))
         return (total, denom, weights, deltas)
         
 class MarketHistory(object):

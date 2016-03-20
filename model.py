@@ -1,41 +1,11 @@
 #!/usr/bin/python
 
 import stockmarket as sm
+import weightings as wgts
 import numpy as np
 import sys, getopt, math
 from scipy import optimize 
 
-class PartOneWeight(sm.Weighting):
-    def __init__(self):
-        pass
-    
-    def get_weight(self, mkt, stk, n=100):
-        return -(stk.rcc(-1)-mkt.AvrRCC)/n
-        
-class EqualWeight(sm.Weighting):
-    def __init__(self):
-        pass
-        
-    def get_weight(self, mkt, stk, n=100):
-        return 1
-        
-class PartTwoThreeWeight(sm.Weighting):
-    def __init__(self, alphas):
-        self.alphas = alphas
-    
-    def get_weight(self, mkt, stk, n=100):
-        weight = 0;
-        rcc = (stk.rcc(-1)-mkt.AvrRCC) / mkt.n
-        roo = (stk.roo( 0)-mkt.AvrROO) / mkt.n
-        roc = (stk.roc(-1)-mkt.AvrROC) / mkt.n
-        rco = (stk.rco( 0)-mkt.AvrRCO) / mkt.n
-        tvl = (stk.tvl(-1)-stk.AvrTVL) / mkt.n
-        rvp = (stk.rvp(-1)-stk.AvrRVP) / mkt.n
-        weight += (self.alphas[0] + self.alphas[4]*tvl + self.alphas[ 8]*rvp) * rcc
-        weight += (self.alphas[1] + self.alphas[5]*tvl + self.alphas[ 9]*rvp) * roo
-        weight += (self.alphas[2] + self.alphas[6]*tvl + self.alphas[10]*rvp) * roc
-        weight += (self.alphas[3] + self.alphas[7]*tvl + self.alphas[11]*rvp) * rco
-        return weight
 
 def sharpe_ratio(gains):
     print(gains)
@@ -48,8 +18,8 @@ def get_result_from_alphas(src, dst, alphas):
     end = 500
     mkt = sm.Market(100)
     i = 1;
-    # wgt = PartTwoThreeWeight(alphas)
-    wgt = EqualWeight()
+    wgt = wgts.PartFourWeight(alphas)
+    # wgt = EqualWeight()
     gains = []
     src.seek(0,0)
     for line in src:
@@ -61,6 +31,7 @@ def get_result_from_alphas(src, dst, alphas):
         if i > start+2:
             mkt.set_averages()
             #CHANGE False TO True TO CHECK IND VALUES
+            print(arr[0])
             vals = mkt.get_delta(wgt, 1, True)
             delta = vals[0]/vals[1]
             dst.write(str(delta)+',')
@@ -132,9 +103,14 @@ def main(argv):
 #     alphas = [1.41538746e+12 , -1.72222380e+12  , 2.57813351e+12 , -1.79483444e+17,
 #    1.98851186e+10 , -1.82425433e+10 , -2.27162625e+10 ,  3.17193513e+11,
 #    5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09] #0.87 Powell bins
-    alphas = [1.41538746e+12 , -1.72222380e+12 ,  2.57813351e+12 , -1.79483444e+17,
+#     alphas = [-4.19755996 , 7.24741087 , 0.32561918, -6.16136174 , 0.7846708 ,  0.92218809,
+#  -3.38091198, -4.81106429, -7.76693095, -4.26818569 , 5.60763459 , 8.89775721]
+    
+    #part 4
+    alphas = [1.41538746e+12 , -1.72222380e+12  , 2.57813351e+12 , -1.79483444e+17,
    1.98851186e+10 , -1.82425433e+10 , -2.27162625e+10 ,  3.17193513e+11,
-   5.44634656e+09 ,  5.44634657e+09 ,  5.44634656e+09  , 5.44634657e+09]
+   5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09, 0.0]
+    
     func = lambda x : get_result_from_alphas(src, dst, x)
     print(get_result_from_alphas(src, dst, alphas))
     src.close()
