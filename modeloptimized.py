@@ -1,5 +1,5 @@
 #!/usr/bin/python
-maxs = 0
+# maxs = 0
 import stockmarket as sm
 import numpy as np
 import sys, getopt, math
@@ -10,12 +10,16 @@ def sharpe_ratio(gains):
     return math.sqrt(252)*sum(gains)/len(gains)/np.std(gains)
 
 def get_result_from_alphas(hist, wgt, alphas, start=1, check_fill=False):
-    global maxs
+    # global maxs
     gains = hist.getDelta(wgt(alphas), start, check_fill)
     score = sharpe_ratio(gains)
-    if score > maxs:
-        maxs = score
-        print(alphas)
+    # if score > maxs:
+        # maxs = score
+    print(score)
+    string = ''
+    for a in alphas:
+        string += str(a)+','
+    print(string    )
     return -sharpe_ratio(gains)
 
 def main(argv):
