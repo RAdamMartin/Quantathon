@@ -8,6 +8,8 @@ import weightings as wgts
 import datetime
 
 def sharpe_ratio(gains):
+    print(sum(gains)/len(gains))
+    print(np.std(gains))
     return math.sqrt(252)*sum(gains)/len(gains)/np.std(gains)
 
 def get_result_from_alphas(hist, wgt, alphas, start=1, check_fill=False, exclude_inds=False):
