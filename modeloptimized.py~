@@ -90,8 +90,8 @@ def main(argv):
     #     -2.31144825e+03,  -1.14817264e+03,   1.00000000e+00,
     #      1.00000000e+00,   1.00000000e+00,   1.00000000e+00]
     func = lambda x : get_result_from_alphas(hist, wgt, x, 1, True)
-    res = optimize.basinhopping(func=func, x0=alphas, niter=200, minimizer_kwargs={"method": "TNC"})
-    # res = de.differential_evolution(func, bounds)
+    #res = optimize.basinhopping(func=func, x0=alphas, niter=200, minimizer_kwargs={"method": "TNC"})
+    res = optimize.differential_evolution(func, bounds)
     # res = optimize.minimize(fun=func, x0=alphas, method='Powell')
     print(res)  
     # print(func(alphas))
