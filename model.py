@@ -18,9 +18,9 @@ def get_result_from_alphas(src, dst, alphas):
     end = 500
     mkt = sm.Market(100)
     i = 1;
-    # wgt = wgts.PartTwoThreeWeight(alphas)
+    wgt = wgts.PartTwoThreeWeight(alphas)
     # wgt = wgts.EqualWeight()
-    wgt = wgts.PartOneWeight()
+    # wgt = wgts.PartFourWeight(alphas)
     gains = []
     src.seek(0,0)
     for line in src:
@@ -33,18 +33,18 @@ def get_result_from_alphas(src, dst, alphas):
             mkt.set_averages()
             #CHANGE False TO True TO CHECK IND VALUES
             # print(arr[0])
-            # vals = mkt.get_delta(wgt, 1, False)
-            # delta = vals[0]/vals[1]
-            # dst.write(str(delta)+',')
-            # gains.append(delta)
-            # dst.write(str(sum(gains))+',')
-            # dst.write(str(vals[1])+',')
-            # dst.write(str(abs(delta)/delta)+',')
-            # for w in vals[2]:
-            #     dst.write(str(w)+',')
-            # for d in vals[3]:
-            #     dst.write(str(d)+',')
-            gains.append(mkt.calculate_delta(wgt, 1, False))
+            vals = mkt.get_delta(wgt, 1, True)
+            delta = vals[0]/vals[1]
+            # gains.append(mkt.calculate_delta(wgt, 1, False))
+            dst.write(str(delta)+',')
+            gains.append(delta)
+            dst.write(str(sum(gains))+',')
+            dst.write(str(vals[1])+',')
+            dst.write(str(abs(delta)/delta)+',')
+            for w in vals[2]:
+                dst.write(str(w)+',')
+            for d in vals[3]:
+                dst.write(str(d)+',')
         else :
             for n in range(104):
                 dst.write('99,')
@@ -86,14 +86,18 @@ def main(argv):
 #     alphas = [ -1.40079453 ,  2.15137419  , 3.84102477 , -4.80420109 ,  0.66858495,
 #   10.8904451 , -11.62914075 ,-11.95806813  ,-0.81271439 , -0.4571093,
 #   -0.42007713 ,  0.39063521] #1.6 buckets
-    alphas = [-8.77519381e+05, 9.14005195e+05, 4.27731027e+05,
-        -1.45712088e+07, 1.06063059e+01, -1.26390855e+01,
-        1.64257209e+00, -4.03828123e+01, -2.25249306e+01,
-         2.19522184e+01, 2.18636677e+01, 2.25134671e+01] #6.7 From Powell
+    # alphas = [-8.77519381e+05, 9.14005195e+05, 4.27731027e+05,
+    #     -1.45712088e+07, 1.06063059e+01, -1.26390855e+01,
+    #     1.64257209e+00, -4.03828123e+01, -2.25249306e+01,
+    #      2.19522184e+01, 2.18636677e+01, 2.25134671e+01] #6.7 From Powell
 #     alphas = [-7.69259494e+05 ,  1.57069517e+06 ,  4.83853959e+05 , -1.32479662e+07
 #    ,3.13196288e+00 , -1.82910156e+01  , 7.43488770e-01 , -2.94518368e+01,
 #   -2.25249306e+01 ,  2.19522184e+01  , 2.18636677e+01 ,  2.25134671e+01]#6.64 From Powell
     
+    # alphas = [  1.41538746e+12,  -1.72222380e+12,   2.57813351e+12,
+    #     -1.79483444e+17,   5.31067896e+11,  -3.71009826e+12,
+    #     -1.72333607e+11,   3.16643058e+11,   5.44634657e+09,
+    #      5.44634657e+09,   5.44634657e+09,   5.44634657e+09]4.633 From Powell
     
     #part 3
 #     alphas = [ 110.85246204 ,  59.85486885 , -75.46268603 ,  12.00436449 ,  15.76120424,

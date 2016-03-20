@@ -58,14 +58,14 @@ def main(argv):
     src.close() 
 
     wgt = wgts.PartTwoThreeWeight
-    # alphas = np.random.rand(13)
-    # alphas = map((lambda x : 2*(x-0.5)), alphas)
+    alphas = np.random.rand(12)
+    alphas = map((lambda x : 100*(x-0.5)), alphas)
     # alphas = [1.41538746e+12 , -1.72222380e+12  , 2.57813351e+12 , -1.79483444e+17,
     # 1.98851186e+10 , -1.82425433e+10 , -2.27162625e+10 ,  3.17193513e+11,
     # 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09, 0.0, 0.0]
-    alphas = [1.41538746e+12 , -1.72222380e+12  , 2.57813351e+12 , -1.79483444e+17,
-        1.98851186e+10 , -1.82425433e+10 , -2.27162625e+10 ,  3.17193513e+11,
-        5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09]
+#     alphas = [1.41538746e+12 , -1.72222380e+12  , 2.57813351e+12 , -1.79483444e+17,
+#    1.98851186e+10 , -1.82425433e+10 , -2.27162625e+10 ,  3.17193513e+11,
+#    5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09]
     # alphas = []
     # bounds = []
     # for n in range(12):
@@ -76,7 +76,7 @@ def main(argv):
     #     -2.31144825e+03,  -1.14817264e+03,   1.00000000e+00,
     #      1.00000000e+00,   1.00000000e+00,   1.00000000e+00]
     func = lambda x : get_result_from_alphas(hist, wgt, x, 1, True)
-    res = optimize.basinhopping(func=func, x0=alphas, niter=50, niter_success=10, minimizer_kwargs={"method": "Powell", "options": {"maxiter":50}})
+    res = optimize.basinhopping(func=func, x0=alphas, niter=50, niter_success=10, minimizer_kwargs={"method": "Powell", "options": {"maxiter":100}})
     # res = optimize.differential_evolution(func, bounds)
     # res = optimize.minimize(fun=func, x0=alphas, method='Powell', maxiter=50)
     print(res)  

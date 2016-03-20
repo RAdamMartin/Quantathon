@@ -167,7 +167,6 @@ class Market(object):
         denom = 0
         weights = []
         deltas = []
-        blocked = 0
         for i in range(self.n):
             stk = self.stocks[i]
             delta = stk.roc()
@@ -177,14 +176,11 @@ class Market(object):
             weights.append(weight)
             deltas.append(delta)
             ind = stk.ind()
+            if (ind == 0):
+                print("CRAP AT " + str(i))
             if (not check_fill) or (ind*weight > 0) : 
                 total += weight*delta
                 denom += abs(weight)
-        #     else :
-        #         blocked += weight*delta
-        #         print("Blocked " + str(i) + " with weight " + str(weight) + " delta :" + str(delta))
-            
-        # print("\tTotal blockage: " + str(blocked))
         return (total, denom, weights, deltas)
         
 class MarketHistory(object):
