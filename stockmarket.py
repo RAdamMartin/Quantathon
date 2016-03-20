@@ -155,7 +155,7 @@ class Market(object):
                 delta = stk.rcc()
             weight = weighter.get_weight(self, stk)
             ind = stk.ind()
-            if (not check_fill) or (ind*weight >= 0) : 
+            if (not check_fill) or (ind*weight > 0) : 
                 total += weight*delta
                 denom += abs(weight)
 
@@ -176,10 +176,11 @@ class Market(object):
             weights.append(weight)
             deltas.append(delta)
             ind = stk.ind()
-            if (not check_fill) or (ind*weight >= 0) : 
+            if (ind == 0):
+                print("CRAP AT " + str(i))
+            if (not check_fill) or (ind*weight > 0) : 
                 total += weight*delta
                 denom += abs(weight)
-
         return (total, denom, weights, deltas)
         
 class MarketHistory(object):

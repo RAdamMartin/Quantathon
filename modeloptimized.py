@@ -1,41 +1,25 @@
 #!/usr/bin/python
-
+# maxs = 0
 import stockmarket as sm
 import numpy as np
 import sys, getopt, math
 from scipy import optimize
-
-class PartOneWeight(sm.Weighting):
-    def __init__(self):
-        pass
-    
-    def get_weight(self, mkt, stk, n=100):
-        return -(1/n)*(stk.rcc()-mkt.AvrRCC)
-        
-class PartTwoThreeWeight(sm.Weighting):
-    def __init__(self, alphas):
-        self.alphas = alphas
-    
-    def get_weight(self, mkt, stk, n=100):
-        weight = 0;
-        rcc = (stk.rcc(-1)-mkt.AvrRCC) / mkt.n
-        roo = (stk.roo( 0)-mkt.AvrROO) / mkt.n
-        roc = (stk.roc(-1)-mkt.AvrROC) / mkt.n
-        rco = (stk.rco( 0)-mkt.AvrRCO) / mkt.n
-        tvl = (stk.tvl(-1)-stk.AvrTVL) / mkt.n
-        rvp = (stk.rvp(-1)-stk.AvrRVP) / mkt.n
-        weight += (self.alphas[0] + self.alphas[4]*tvl + self.alphas[ 8]*rvp) * rcc
-        weight += (self.alphas[1] + self.alphas[5]*tvl + self.alphas[ 9]*rvp) * roo
-        weight += (self.alphas[2] + self.alphas[6]*tvl + self.alphas[10]*rvp) * roc
-        weight += (self.alphas[3] + self.alphas[7]*tvl + self.alphas[11]*rvp) * rco
-        return weight
+import weightings as wgts
 
 def sharpe_ratio(gains):
     return math.sqrt(252)*sum(gains)/len(gains)/np.std(gains)
 
 def get_result_from_alphas(hist, wgt, alphas, start=1, check_fill=False):
+    # global maxs
     gains = hist.getDelta(wgt(alphas), start, check_fill)
-    print(alphas)
+    score = sharpe_ratio(gains)
+    # if score > maxs:
+        # maxs = score
+    print(score)
+    string = ''
+    for a in alphas:
+        string += str(a)+','
+    print(string    )
     return -sharpe_ratio(gains)
 
 def main(argv):
@@ -77,22 +61,28 @@ def main(argv):
             break;
     src.close() 
 
-    wgt = PartTwoThreeWeight
+    wgt = wgts.PartTwoThreeWeight
     alphas = np.random.rand(12)
-    alphas = map((lambda x : 2*(x-0.5)), alphas)
+    alphas = map((lambda x : 100*(x-0.5)), alphas)
+    # alphas = [1.41538746e+12 , -1.72222380e+12  , 2.57813351e+12 , -1.79483444e+17,
+    # 1.98851186e+10 , -1.82425433e+10 , -2.27162625e+10 ,  3.17193513e+11,
+    # 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09, 0.0, 0.0]
+#     alphas = [1.41538746e+12 , -1.72222380e+12  , 2.57813351e+12 , -1.79483444e+17,
+#    1.98851186e+10 , -1.82425433e+10 , -2.27162625e+10 ,  3.17193513e+11,
+#    5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09]
     # alphas = []
-    bounds = []
-    for n in range(12):
-        # alphas[n] = 0.1
-        bounds.append((-1000,1000))
+    # bounds = []
+    # for n in range(12):
+    #     # alphas[n] = 0.1
+    #     bounds.append((-10,10))
     # alphas = [ -1.37873689e+00,  -2.86811840e+01,   2.06475215e+00,
     #     -3.00192275e+01,   1.85853877e+03,   1.08544918e+03,
     #     -2.31144825e+03,  -1.14817264e+03,   1.00000000e+00,
     #      1.00000000e+00,   1.00000000e+00,   1.00000000e+00]
     func = lambda x : get_result_from_alphas(hist, wgt, x, 1, True)
-    #res = optimize.basinhopping(func=func, x0=alphas, niter=200, minimizer_kwargs={"method": "TNC"})
-    res = optimize.differential_evolution(func, bounds)
-    # res = optimize.minimize(fun=func, x0=alphas, method='Powell')
+    res = optimize.basinhopping(func=func, x0=alphas, niter=50, niter_success=10, minimizer_kwargs={"method": "Powell", "options": {"maxiter":100}})
+    # res = optimize.differential_evolution(func, bounds)
+    # res = optimize.minimize(fun=func, x0=alphas, method='Powell', maxiter=50)
     print(res)  
     # print(func(alphas))
     # dst.close()

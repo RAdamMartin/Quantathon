@@ -1,0 +1,2008 @@
+('Input file is', 'data.csv')
+('Output file is', 'temp.csv')
+20000106
+	Total blockage: 0
+20000107
+	Total blockage: 0
+20000110
+	Total blockage: 0
+20000111
+	Total blockage: 0
+20000112
+	Total blockage: 0
+20000113
+	Total blockage: 0
+20000114
+	Total blockage: 0
+20000118
+	Total blockage: 0
+20000119
+	Total blockage: 0
+20000120
+	Total blockage: 0
+20000121
+	Total blockage: 0
+20000124
+	Total blockage: 0
+20000125
+	Total blockage: 0
+20000126
+	Total blockage: 0
+20000127
+	Total blockage: 0
+20000128
+	Total blockage: 0
+20000131
+	Total blockage: 0
+20000201
+	Total blockage: 0
+20000202
+	Total blockage: 0
+20000203
+	Total blockage: 0
+20000204
+	Total blockage: 0
+20000207
+	Total blockage: 0
+20000208
+	Total blockage: 0
+20000209
+	Total blockage: 0
+20000210
+	Total blockage: 0
+20000211
+	Total blockage: 0
+20000214
+	Total blockage: 0
+20000215
+	Total blockage: 0
+20000216
+	Total blockage: 0
+20000217
+	Total blockage: 0
+20000218
+	Total blockage: 0
+20000222
+	Total blockage: 0
+20000223
+	Total blockage: 0
+20000224
+	Total blockage: 0
+20000225
+	Total blockage: 0
+20000228
+	Total blockage: 0
+20000229
+	Total blockage: 0
+20000301
+	Total blockage: 0
+20000302
+	Total blockage: 0
+20000303
+	Total blockage: 0
+20000306
+	Total blockage: 0
+20000307
+	Total blockage: 0
+20000308
+	Total blockage: 0
+20000309
+	Total blockage: 0
+20000310
+	Total blockage: 0
+20000313
+	Total blockage: 0
+20000314
+	Total blockage: 0
+20000315
+	Total blockage: 0
+20000316
+	Total blockage: 0
+20000317
+	Total blockage: 0
+20000320
+	Total blockage: 0
+20000321
+	Total blockage: 0
+20000322
+	Total blockage: 0
+20000323
+	Total blockage: 0
+20000324
+	Total blockage: 0
+20000327
+	Total blockage: 0
+20000328
+	Total blockage: 0
+20000329
+	Total blockage: 0
+20000330
+	Total blockage: 0
+20000331
+	Total blockage: 0
+20000403
+	Total blockage: 0
+20000404
+	Total blockage: 0
+20000405
+	Total blockage: 0
+20000406
+	Total blockage: 0
+20000407
+	Total blockage: 0
+20000410
+	Total blockage: 0
+20000411
+	Total blockage: 0
+20000412
+	Total blockage: 0
+20000413
+	Total blockage: 0
+20000414
+	Total blockage: 0
+20000417
+	Total blockage: 0
+20000418
+	Total blockage: 0
+20000419
+	Total blockage: 0
+20000420
+	Total blockage: 0
+20000424
+	Total blockage: 0
+20000425
+	Total blockage: 0
+20000426
+	Total blockage: 0
+20000427
+	Total blockage: 0
+20000428
+	Total blockage: 0
+20000501
+	Total blockage: 0
+20000502
+	Total blockage: 0
+20000503
+	Total blockage: 0
+20000504
+	Total blockage: 0
+20000505
+	Total blockage: 0
+20000508
+	Total blockage: 0
+20000509
+	Total blockage: 0
+20000510
+	Total blockage: 0
+20000511
+	Total blockage: 0
+20000512
+	Total blockage: 0
+20000515
+	Total blockage: 0
+20000516
+	Total blockage: 0
+20000517
+	Total blockage: 0
+20000518
+	Total blockage: 0
+20000519
+	Total blockage: 0
+20000522
+	Total blockage: 0
+20000523
+	Total blockage: 0
+20000524
+	Total blockage: 0
+20000525
+	Total blockage: 0
+20000526
+	Total blockage: 0
+20000530
+	Total blockage: 0
+20000531
+	Total blockage: 0
+20000601
+	Total blockage: 0
+20000602
+	Total blockage: 0
+20000605
+	Total blockage: 0
+20000606
+	Total blockage: 0
+20000607
+	Total blockage: 0
+20000608
+	Total blockage: 0
+20000609
+	Total blockage: 0
+20000612
+	Total blockage: 0
+20000613
+	Total blockage: 0
+20000614
+	Total blockage: 0
+20000615
+	Total blockage: 0
+20000616
+	Total blockage: 0
+20000619
+	Total blockage: 0
+20000620
+	Total blockage: 0
+20000621
+	Total blockage: 0
+20000622
+	Total blockage: 0
+20000623
+	Total blockage: 0
+20000626
+	Total blockage: 0
+20000627
+	Total blockage: 0
+20000628
+	Total blockage: 0
+20000629
+	Total blockage: 0
+20000630
+	Total blockage: 0
+20000703
+	Total blockage: 0
+20000705
+	Total blockage: 0
+20000706
+	Total blockage: 0
+20000707
+	Total blockage: 0
+20000710
+	Total blockage: 0
+20000711
+	Total blockage: 0
+20000712
+	Total blockage: 0
+20000713
+	Total blockage: 0
+20000714
+	Total blockage: 0
+20000717
+	Total blockage: 0
+20000718
+	Total blockage: 0
+20000719
+	Total blockage: 0
+20000720
+	Total blockage: 0
+20000721
+	Total blockage: 0
+20000724
+	Total blockage: 0
+20000725
+	Total blockage: 0
+20000726
+	Total blockage: 0
+20000727
+	Total blockage: 0
+20000728
+	Total blockage: 0
+20000731
+	Total blockage: 0
+20000801
+	Total blockage: 0
+20000802
+	Total blockage: 0
+20000803
+	Total blockage: 0
+20000804
+	Total blockage: 0
+20000807
+	Total blockage: 0
+20000808
+	Total blockage: 0
+20000809
+	Total blockage: 0
+20000810
+	Total blockage: 0
+20000811
+	Total blockage: 0
+20000814
+	Total blockage: 0
+20000815
+	Total blockage: 0
+20000816
+	Total blockage: 0
+20000817
+	Total blockage: 0
+20000818
+	Total blockage: 0
+20000821
+	Total blockage: 0
+20000822
+	Total blockage: 0
+20000823
+	Total blockage: 0
+20000824
+	Total blockage: 0
+20000825
+	Total blockage: 0
+20000828
+	Total blockage: 0
+20000829
+	Total blockage: 0
+20000830
+	Total blockage: 0
+20000831
+	Total blockage: 0
+20000901
+	Total blockage: 0
+20000905
+	Total blockage: 0
+20000906
+	Total blockage: 0
+20000907
+	Total blockage: 0
+20000908
+	Total blockage: 0
+20000911
+	Total blockage: 0
+20000912
+	Total blockage: 0
+20000913
+	Total blockage: 0
+20000914
+	Total blockage: 0
+20000915
+	Total blockage: 0
+20000918
+	Total blockage: 0
+20000919
+	Total blockage: 0
+20000920
+	Total blockage: 0
+20000921
+	Total blockage: 0
+20000922
+	Total blockage: 0
+20000925
+	Total blockage: 0
+20000926
+	Total blockage: 0
+20000927
+	Total blockage: 0
+20000928
+	Total blockage: 0
+20000929
+	Total blockage: 0
+20001002
+	Total blockage: 0
+20001003
+	Total blockage: 0
+20001004
+	Total blockage: 0
+20001005
+	Total blockage: 0
+20001006
+	Total blockage: 0
+20001009
+	Total blockage: 0
+20001010
+	Total blockage: 0
+20001011
+	Total blockage: 0
+20001012
+	Total blockage: 0
+20001013
+	Total blockage: 0
+20001016
+	Total blockage: 0
+20001017
+	Total blockage: 0
+20001018
+	Total blockage: 0
+20001019
+	Total blockage: 0
+20001020
+	Total blockage: 0
+20001023
+	Total blockage: 0
+20001024
+	Total blockage: 0
+20001025
+	Total blockage: 0
+20001026
+	Total blockage: 0
+20001027
+	Total blockage: 0
+20001030
+	Total blockage: 0
+20001031
+	Total blockage: 0
+20001101
+	Total blockage: 0
+20001102
+	Total blockage: 0
+20001103
+	Total blockage: 0
+20001106
+	Total blockage: 0
+20001107
+	Total blockage: 0
+20001108
+	Total blockage: 0
+20001109
+	Total blockage: 0
+20001110
+	Total blockage: 0
+20001113
+	Total blockage: 0
+20001114
+	Total blockage: 0
+20001115
+	Total blockage: 0
+20001116
+	Total blockage: 0
+20001117
+	Total blockage: 0
+20001120
+	Total blockage: 0
+20001121
+	Total blockage: 0
+20001122
+	Total blockage: 0
+20001124
+	Total blockage: 0
+20001127
+	Total blockage: 0
+20001128
+	Total blockage: 0
+20001129
+	Total blockage: 0
+20001130
+	Total blockage: 0
+20001201
+	Total blockage: 0
+20001204
+	Total blockage: 0
+20001205
+	Total blockage: 0
+20001206
+	Total blockage: 0
+20001207
+	Total blockage: 0
+20001208
+	Total blockage: 0
+20001211
+	Total blockage: 0
+20001212
+	Total blockage: 0
+20001213
+	Total blockage: 0
+20001214
+	Total blockage: 0
+20001215
+	Total blockage: 0
+20001218
+	Total blockage: 0
+20001219
+	Total blockage: 0
+20001220
+	Total blockage: 0
+20001221
+	Total blockage: 0
+20001222
+	Total blockage: 0
+20001226
+	Total blockage: 0
+20001227
+	Total blockage: 0
+20001228
+	Total blockage: 0
+20001229
+	Total blockage: 0
+20010102
+	Total blockage: 0
+20010103
+	Total blockage: 0
+20010104
+	Total blockage: 0
+20010105
+	Total blockage: 0
+20010108
+	Total blockage: 0
+20010109
+	Total blockage: 0
+20010110
+	Total blockage: 0
+20010111
+	Total blockage: 0
+20010112
+	Total blockage: 0
+20010116
+	Total blockage: 0
+20010117
+	Total blockage: 0
+20010118
+	Total blockage: 0
+20010119
+	Total blockage: 0
+20010122
+	Total blockage: 0
+20010123
+	Total blockage: 0
+20010124
+	Total blockage: 0
+20010125
+	Total blockage: 0
+20010126
+	Total blockage: 0
+20010129
+	Total blockage: 0
+20010130
+	Total blockage: 0
+20010131
+	Total blockage: 0
+20010201
+	Total blockage: 0
+20010202
+	Total blockage: 0
+20010205
+	Total blockage: 0
+20010206
+	Total blockage: 0
+20010207
+	Total blockage: 0
+20010208
+	Total blockage: 0
+20010209
+	Total blockage: 0
+20010212
+	Total blockage: 0
+20010213
+	Total blockage: 0
+20010214
+	Total blockage: 0
+20010215
+	Total blockage: 0
+20010216
+	Total blockage: 0
+20010220
+	Total blockage: 0
+20010221
+	Total blockage: 0
+20010222
+	Total blockage: 0
+20010223
+	Total blockage: 0
+20010226
+	Total blockage: 0
+20010227
+	Total blockage: 0
+20010228
+	Total blockage: 0
+20010301
+	Total blockage: 0
+20010302
+	Total blockage: 0
+20010305
+	Total blockage: 0
+20010306
+	Total blockage: 0
+20010307
+	Total blockage: 0
+20010308
+	Total blockage: 0
+20010309
+	Total blockage: 0
+20010312
+	Total blockage: 0
+20010313
+	Total blockage: 0
+20010314
+	Total blockage: 0
+20010315
+	Total blockage: 0
+20010316
+	Total blockage: 0
+20010319
+	Total blockage: 0
+20010320
+	Total blockage: 0
+20010321
+	Total blockage: 0
+20010322
+	Total blockage: 0
+20010323
+	Total blockage: 0
+20010326
+	Total blockage: 0
+20010327
+	Total blockage: 0
+20010328
+	Total blockage: 0
+20010329
+	Total blockage: 0
+20010330
+	Total blockage: 0
+20010402
+	Total blockage: 0
+20010403
+	Total blockage: 0
+20010404
+	Total blockage: 0
+20010405
+	Total blockage: 0
+20010406
+	Total blockage: 0
+20010409
+	Total blockage: 0
+20010410
+	Total blockage: 0
+20010411
+	Total blockage: 0
+20010412
+	Total blockage: 0
+20010416
+	Total blockage: 0
+20010417
+	Total blockage: 0
+20010418
+	Total blockage: 0
+20010419
+	Total blockage: 0
+20010420
+	Total blockage: 0
+20010423
+	Total blockage: 0
+20010424
+	Total blockage: 0
+20010425
+	Total blockage: 0
+20010426
+	Total blockage: 0
+20010427
+	Total blockage: 0
+20010430
+	Total blockage: 0
+20010501
+	Total blockage: 0
+20010502
+	Total blockage: 0
+20010503
+	Total blockage: 0
+20010504
+	Total blockage: 0
+20010507
+	Total blockage: 0
+20010508
+	Total blockage: 0
+20010509
+	Total blockage: 0
+20010510
+	Total blockage: 0
+20010511
+	Total blockage: 0
+20010514
+	Total blockage: 0
+20010515
+	Total blockage: 0
+20010516
+	Total blockage: 0
+20010517
+	Total blockage: 0
+20010518
+	Total blockage: 0
+20010521
+	Total blockage: 0
+20010522
+	Total blockage: 0
+20010523
+	Total blockage: 0
+20010524
+	Total blockage: 0
+20010525
+	Total blockage: 0
+20010529
+	Total blockage: 0
+20010530
+	Total blockage: 0
+20010531
+	Total blockage: 0
+20010601
+	Total blockage: 0
+20010604
+	Total blockage: 0
+20010605
+	Total blockage: 0
+20010606
+	Total blockage: 0
+20010607
+	Total blockage: 0
+20010608
+	Total blockage: 0
+20010611
+	Total blockage: 0
+20010612
+	Total blockage: 0
+20010613
+	Total blockage: 0
+20010614
+	Total blockage: 0
+20010615
+	Total blockage: 0
+20010618
+	Total blockage: 0
+20010619
+	Total blockage: 0
+20010620
+	Total blockage: 0
+20010621
+	Total blockage: 0
+20010622
+	Total blockage: 0
+20010625
+	Total blockage: 0
+20010626
+	Total blockage: 0
+20010627
+	Total blockage: 0
+20010628
+	Total blockage: 0
+20010629
+	Total blockage: 0
+20010702
+	Total blockage: 0
+20010703
+	Total blockage: 0
+20010705
+	Total blockage: 0
+20010706
+	Total blockage: 0
+20010709
+	Total blockage: 0
+20010710
+	Total blockage: 0
+20010711
+	Total blockage: 0
+20010712
+	Total blockage: 0
+20010713
+	Total blockage: 0
+20010716
+	Total blockage: 0
+20010717
+	Total blockage: 0
+20010718
+	Total blockage: 0
+20010719
+	Total blockage: 0
+20010720
+	Total blockage: 0
+20010723
+	Total blockage: 0
+20010724
+	Total blockage: 0
+20010725
+	Total blockage: 0
+20010726
+	Total blockage: 0
+20010727
+	Total blockage: 0
+20010730
+	Total blockage: 0
+20010731
+	Total blockage: 0
+20010801
+	Total blockage: 0
+20010802
+	Total blockage: 0
+20010803
+	Total blockage: 0
+20010806
+	Total blockage: 0
+20010807
+	Total blockage: 0
+20010808
+	Total blockage: 0
+20010809
+	Total blockage: 0
+20010810
+	Total blockage: 0
+20010813
+	Total blockage: 0
+20010814
+	Total blockage: 0
+20010815
+	Total blockage: 0
+20010816
+	Total blockage: 0
+20010817
+	Total blockage: 0
+20010820
+	Total blockage: 0
+20010821
+	Total blockage: 0
+20010822
+	Total blockage: 0
+20010823
+	Total blockage: 0
+20010824
+	Total blockage: 0
+20010827
+	Total blockage: 0
+20010828
+	Total blockage: 0
+20010829
+	Total blockage: 0
+20010830
+	Total blockage: 0
+20010831
+	Total blockage: 0
+20010904
+	Total blockage: 0
+20010905
+	Total blockage: 0
+20010906
+	Total blockage: 0
+20010907
+	Total blockage: 0
+20010910
+	Total blockage: 0
+20010917
+	Total blockage: 0
+20010918
+	Total blockage: 0
+20010919
+	Total blockage: 0
+20010920
+	Total blockage: 0
+20010921
+	Total blockage: 0
+20010924
+	Total blockage: 0
+20010925
+	Total blockage: 0
+20010926
+	Total blockage: 0
+20010927
+	Total blockage: 0
+20010928
+	Total blockage: 0
+20011001
+	Total blockage: 0
+20011002
+	Total blockage: 0
+20011003
+	Total blockage: 0
+20011004
+	Total blockage: 0
+20011005
+	Total blockage: 0
+20011008
+	Total blockage: 0
+20011009
+	Total blockage: 0
+20011010
+	Total blockage: 0
+20011011
+	Total blockage: 0
+20011012
+	Total blockage: 0
+20011015
+	Total blockage: 0
+20011016
+	Total blockage: 0
+20011017
+	Total blockage: 0
+20011018
+	Total blockage: 0
+20011019
+	Total blockage: 0
+20011022
+	Total blockage: 0
+20011023
+	Total blockage: 0
+20011024
+	Total blockage: 0
+20011025
+	Total blockage: 0
+20011026
+	Total blockage: 0
+20011029
+	Total blockage: 0
+20011030
+	Total blockage: 0
+20011031
+	Total blockage: 0
+20011101
+	Total blockage: 0
+20011102
+	Total blockage: 0
+20011105
+	Total blockage: 0
+20011106
+	Total blockage: 0
+20011107
+	Total blockage: 0
+20011108
+	Total blockage: 0
+20011109
+	Total blockage: 0
+20011112
+	Total blockage: 0
+20011113
+	Total blockage: 0
+20011114
+	Total blockage: 0
+20011115
+	Total blockage: 0
+20011116
+	Total blockage: 0
+20011119
+	Total blockage: 0
+20011120
+	Total blockage: 0
+20011121
+	Total blockage: 0
+20011123
+	Total blockage: 0
+20011126
+	Total blockage: 0
+20011127
+	Total blockage: 0
+20011128
+	Total blockage: 0
+20011129
+	Total blockage: 0
+20011130
+	Total blockage: 0
+20011203
+	Total blockage: 0
+20011204
+	Total blockage: 0
+20011205
+	Total blockage: 0
+20011206
+	Total blockage: 0
+20011207
+	Total blockage: 0
+20011210
+	Total blockage: 0
+20011211
+	Total blockage: 0
+20011212
+	Total blockage: 0
+20011213
+	Total blockage: 0
+20011214
+	Total blockage: 0
+20011217
+	Total blockage: 0
+20011218
+	Total blockage: 0
+20011219
+	Total blockage: 0
+20011220
+	Total blockage: 0
+20011221
+	Total blockage: 0
+20011224
+	Total blockage: 0
+20011226
+	Total blockage: 0
+20011227
+	Total blockage: 0
+20011228
+	Total blockage: 0
+20011231
+	Total blockage: 0
+20020102
+	Total blockage: 0
+20020103
+	Total blockage: 0
+20020104
+	Total blockage: 0
+20020107
+	Total blockage: 0
+20020108
+	Total blockage: 0
+20020109
+	Total blockage: 0
+20020110
+	Total blockage: 0
+20020111
+	Total blockage: 0
+20020114
+	Total blockage: 0
+20020115
+	Total blockage: 0
+20020116
+	Total blockage: 0
+20020117
+	Total blockage: 0
+20020118
+	Total blockage: 0
+20020122
+	Total blockage: 0
+20020123
+	Total blockage: 0
+20020124
+	Total blockage: 0
+20020125
+	Total blockage: 0
+20020128
+	Total blockage: 0
+20020129
+	Total blockage: 0
+20020130
+	Total blockage: 0
+20020131
+	Total blockage: 0
+20020201
+	Total blockage: 0
+20020204
+	Total blockage: 0
+20020205
+	Total blockage: 0
+20020206
+	Total blockage: 0
+20020207
+	Total blockage: 0
+20020208
+	Total blockage: 0
+20020211
+	Total blockage: 0
+20020212
+	Total blockage: 0
+20020213
+	Total blockage: 0
+20020214
+	Total blockage: 0
+20020215
+	Total blockage: 0
+20020219
+	Total blockage: 0
+20020220
+	Total blockage: 0
+20020221
+	Total blockage: 0
+20020222
+	Total blockage: 0
+20020225
+	Total blockage: 0
+20020226
+	Total blockage: 0
+20020227
+	Total blockage: 0
+20020228
+	Total blockage: 0
+20020301
+	Total blockage: 0
+20020304
+	Total blockage: 0
+20020305
+	Total blockage: 0
+20020306
+	Total blockage: 0
+20020307
+	Total blockage: 0
+20020308
+	Total blockage: 0
+20020311
+	Total blockage: 0
+20020312
+	Total blockage: 0
+20020313
+	Total blockage: 0
+20020314
+	Total blockage: 0
+20020315
+	Total blockage: 0
+20020318
+	Total blockage: 0
+20020319
+	Total blockage: 0
+20020320
+	Total blockage: 0
+20020321
+	Total blockage: 0
+20020322
+	Total blockage: 0
+20020325
+	Total blockage: 0
+20020326
+	Total blockage: 0
+20020327
+	Total blockage: 0
+20020328
+	Total blockage: 0
+20020401
+	Total blockage: 0
+20020402
+	Total blockage: 0
+20020403
+	Total blockage: 0
+20020404
+	Total blockage: 0
+20020405
+	Total blockage: 0
+20020408
+	Total blockage: 0
+20020409
+	Total blockage: 0
+20020410
+	Total blockage: 0
+20020411
+	Total blockage: 0
+20020412
+	Total blockage: 0
+20020415
+	Total blockage: 0
+20020416
+	Total blockage: 0
+20020417
+	Total blockage: 0
+20020418
+	Total blockage: 0
+20020419
+	Total blockage: 0
+20020422
+	Total blockage: 0
+20020423
+	Total blockage: 0
+20020424
+	Total blockage: 0
+20020425
+	Total blockage: 0
+20020426
+	Total blockage: 0
+20020429
+	Total blockage: 0
+20020430
+	Total blockage: 0
+20020501
+	Total blockage: 0
+20020502
+	Total blockage: 0
+20020503
+	Total blockage: 0
+20020506
+	Total blockage: 0
+20020507
+	Total blockage: 0
+20020508
+	Total blockage: 0
+20020509
+	Total blockage: 0
+20020510
+	Total blockage: 0
+20020513
+	Total blockage: 0
+20020514
+	Total blockage: 0
+20020515
+	Total blockage: 0
+20020516
+	Total blockage: 0
+20020517
+	Total blockage: 0
+20020520
+	Total blockage: 0
+20020521
+	Total blockage: 0
+20020522
+	Total blockage: 0
+20020523
+	Total blockage: 0
+20020524
+	Total blockage: 0
+20020528
+	Total blockage: 0
+20020529
+	Total blockage: 0
+20020530
+	Total blockage: 0
+20020531
+	Total blockage: 0
+20020603
+	Total blockage: 0
+20020604
+	Total blockage: 0
+20020605
+	Total blockage: 0
+20020606
+	Total blockage: 0
+20020607
+	Total blockage: 0
+20020610
+	Total blockage: 0
+20020611
+	Total blockage: 0
+20020612
+	Total blockage: 0
+20020613
+	Total blockage: 0
+20020614
+	Total blockage: 0
+20020617
+	Total blockage: 0
+20020618
+	Total blockage: 0
+20020619
+	Total blockage: 0
+20020620
+	Total blockage: 0
+20020621
+	Total blockage: 0
+20020624
+	Total blockage: 0
+20020625
+	Total blockage: 0
+20020626
+	Total blockage: 0
+20020627
+	Total blockage: 0
+20020628
+	Total blockage: 0
+20020701
+	Total blockage: 0
+20020702
+	Total blockage: 0
+20020703
+	Total blockage: 0
+20020705
+	Total blockage: 0
+20020708
+	Total blockage: 0
+20020709
+	Total blockage: 0
+20020710
+	Total blockage: 0
+20020711
+	Total blockage: 0
+20020712
+	Total blockage: 0
+20020715
+	Total blockage: 0
+20020716
+	Total blockage: 0
+20020717
+	Total blockage: 0
+20020718
+	Total blockage: 0
+20020719
+	Total blockage: 0
+20020722
+	Total blockage: 0
+20020723
+	Total blockage: 0
+20020724
+	Total blockage: 0
+20020725
+	Total blockage: 0
+20020726
+	Total blockage: 0
+20020729
+	Total blockage: 0
+20020730
+	Total blockage: 0
+20020731
+	Total blockage: 0
+20020801
+	Total blockage: 0
+20020802
+	Total blockage: 0
+20020805
+	Total blockage: 0
+20020806
+	Total blockage: 0
+20020807
+	Total blockage: 0
+20020808
+	Total blockage: 0
+20020809
+	Total blockage: 0
+20020812
+	Total blockage: 0
+20020813
+	Total blockage: 0
+20020814
+	Total blockage: 0
+20020815
+	Total blockage: 0
+20020816
+	Total blockage: 0
+20020819
+	Total blockage: 0
+20020820
+	Total blockage: 0
+20020821
+	Total blockage: 0
+20020822
+	Total blockage: 0
+20020823
+	Total blockage: 0
+20020826
+	Total blockage: 0
+20020827
+	Total blockage: 0
+20020828
+	Total blockage: 0
+20020829
+	Total blockage: 0
+20020830
+	Total blockage: 0
+20020903
+	Total blockage: 0
+20020904
+	Total blockage: 0
+20020905
+	Total blockage: 0
+20020906
+	Total blockage: 0
+20020909
+	Total blockage: 0
+20020910
+	Total blockage: 0
+20020911
+	Total blockage: 0
+20020912
+	Total blockage: 0
+20020913
+	Total blockage: 0
+20020916
+	Total blockage: 0
+20020917
+	Total blockage: 0
+20020918
+	Total blockage: 0
+20020919
+	Total blockage: 0
+20020920
+	Total blockage: 0
+20020923
+	Total blockage: 0
+20020924
+	Total blockage: 0
+20020925
+	Total blockage: 0
+20020926
+	Total blockage: 0
+20020927
+	Total blockage: 0
+20020930
+	Total blockage: 0
+20021001
+	Total blockage: 0
+20021002
+	Total blockage: 0
+20021003
+	Total blockage: 0
+20021004
+	Total blockage: 0
+20021007
+	Total blockage: 0
+20021008
+	Total blockage: 0
+20021009
+	Total blockage: 0
+20021010
+	Total blockage: 0
+20021011
+	Total blockage: 0
+20021014
+	Total blockage: 0
+20021015
+	Total blockage: 0
+20021016
+	Total blockage: 0
+20021017
+	Total blockage: 0
+20021018
+	Total blockage: 0
+20021021
+	Total blockage: 0
+20021022
+	Total blockage: 0
+20021023
+	Total blockage: 0
+20021024
+	Total blockage: 0
+20021025
+	Total blockage: 0
+20021028
+	Total blockage: 0
+20021029
+	Total blockage: 0
+20021030
+	Total blockage: 0
+20021031
+	Total blockage: 0
+20021101
+	Total blockage: 0
+20021104
+	Total blockage: 0
+20021105
+	Total blockage: 0
+20021106
+	Total blockage: 0
+20021107
+	Total blockage: 0
+20021108
+	Total blockage: 0
+20021111
+	Total blockage: 0
+20021112
+	Total blockage: 0
+20021113
+	Total blockage: 0
+20021114
+	Total blockage: 0
+20021115
+	Total blockage: 0
+20021118
+	Total blockage: 0
+20021119
+	Total blockage: 0
+20021120
+	Total blockage: 0
+20021121
+	Total blockage: 0
+20021122
+	Total blockage: 0
+20021125
+	Total blockage: 0
+20021126
+	Total blockage: 0
+20021127
+	Total blockage: 0
+20021129
+	Total blockage: 0
+20021202
+	Total blockage: 0
+20021203
+	Total blockage: 0
+20021204
+	Total blockage: 0
+20021205
+	Total blockage: 0
+20021206
+	Total blockage: 0
+20021209
+	Total blockage: 0
+20021210
+	Total blockage: 0
+20021211
+	Total blockage: 0
+20021212
+	Total blockage: 0
+20021213
+	Total blockage: 0
+20021216
+	Total blockage: 0
+20021217
+	Total blockage: 0
+20021218
+	Total blockage: 0
+20021219
+	Total blockage: 0
+20021220
+	Total blockage: 0
+20021223
+	Total blockage: 0
+20021224
+	Total blockage: 0
+20021226
+	Total blockage: 0
+20021227
+	Total blockage: 0
+20021230
+	Total blockage: 0
+20021231
+	Total blockage: 0
+20030102
+	Total blockage: 0
+20030103
+	Total blockage: 0
+20030106
+	Total blockage: 0
+20030107
+	Total blockage: 0
+20030108
+	Total blockage: 0
+20030109
+	Total blockage: 0
+20030110
+	Total blockage: 0
+20030113
+	Total blockage: 0
+20030114
+	Total blockage: 0
+20030115
+	Total blockage: 0
+20030116
+	Total blockage: 0
+20030117
+	Total blockage: 0
+20030121
+	Total blockage: 0
+20030122
+	Total blockage: 0
+20030123
+	Total blockage: 0
+20030124
+	Total blockage: 0
+20030127
+	Total blockage: 0
+20030128
+	Total blockage: 0
+20030129
+	Total blockage: 0
+20030130
+	Total blockage: 0
+20030131
+	Total blockage: 0
+20030203
+	Total blockage: 0
+20030204
+	Total blockage: 0
+20030205
+	Total blockage: 0
+20030206
+	Total blockage: 0
+20030207
+	Total blockage: 0
+20030210
+	Total blockage: 0
+20030211
+	Total blockage: 0
+20030212
+	Total blockage: 0
+20030213
+	Total blockage: 0
+20030214
+	Total blockage: 0
+20030218
+	Total blockage: 0
+20030219
+	Total blockage: 0
+20030220
+	Total blockage: 0
+20030221
+	Total blockage: 0
+20030224
+	Total blockage: 0
+20030225
+	Total blockage: 0
+20030226
+	Total blockage: 0
+20030227
+	Total blockage: 0
+20030228
+	Total blockage: 0
+20030303
+	Total blockage: 0
+20030304
+	Total blockage: 0
+20030305
+	Total blockage: 0
+20030306
+	Total blockage: 0
+20030307
+	Total blockage: 0
+20030310
+	Total blockage: 0
+20030311
+	Total blockage: 0
+20030312
+	Total blockage: 0
+20030313
+	Total blockage: 0
+20030314
+	Total blockage: 0
+20030317
+	Total blockage: 0
+20030318
+	Total blockage: 0
+20030319
+	Total blockage: 0
+20030320
+	Total blockage: 0
+20030321
+	Total blockage: 0
+20030324
+	Total blockage: 0
+20030325
+	Total blockage: 0
+20030326
+	Total blockage: 0
+20030327
+	Total blockage: 0
+20030328
+	Total blockage: 0
+20030331
+	Total blockage: 0
+20030401
+	Total blockage: 0
+20030402
+	Total blockage: 0
+20030403
+	Total blockage: 0
+20030404
+	Total blockage: 0
+20030407
+	Total blockage: 0
+20030408
+	Total blockage: 0
+20030409
+	Total blockage: 0
+20030410
+	Total blockage: 0
+20030411
+	Total blockage: 0
+20030414
+	Total blockage: 0
+20030415
+	Total blockage: 0
+20030416
+	Total blockage: 0
+20030417
+	Total blockage: 0
+20030421
+	Total blockage: 0
+20030422
+	Total blockage: 0
+20030423
+	Total blockage: 0
+20030424
+	Total blockage: 0
+20030425
+	Total blockage: 0
+20030428
+	Total blockage: 0
+20030429
+	Total blockage: 0
+20030430
+	Total blockage: 0
+20030501
+	Total blockage: 0
+20030502
+	Total blockage: 0
+20030505
+	Total blockage: 0
+20030506
+	Total blockage: 0
+20030507
+	Total blockage: 0
+20030508
+	Total blockage: 0
+20030509
+	Total blockage: 0
+20030512
+	Total blockage: 0
+20030513
+	Total blockage: 0
+20030514
+	Total blockage: 0
+20030515
+	Total blockage: 0
+20030516
+	Total blockage: 0
+20030519
+	Total blockage: 0
+20030520
+	Total blockage: 0
+20030521
+	Total blockage: 0
+20030522
+	Total blockage: 0
+20030523
+	Total blockage: 0
+20030527
+	Total blockage: 0
+20030528
+	Total blockage: 0
+20030529
+	Total blockage: 0
+20030530
+	Total blockage: 0
+20030602
+	Total blockage: 0
+20030603
+	Total blockage: 0
+20030604
+	Total blockage: 0
+20030605
+	Total blockage: 0
+20030606
+	Total blockage: 0
+20030609
+	Total blockage: 0
+20030610
+	Total blockage: 0
+20030611
+	Total blockage: 0
+20030612
+	Total blockage: 0
+20030613
+	Total blockage: 0
+20030616
+	Total blockage: 0
+20030617
+	Total blockage: 0
+20030618
+	Total blockage: 0
+20030619
+	Total blockage: 0
+20030620
+	Total blockage: 0
+20030623
+	Total blockage: 0
+20030624
+	Total blockage: 0
+20030625
+	Total blockage: 0
+20030626
+	Total blockage: 0
+20030627
+	Total blockage: 0
+20030630
+	Total blockage: 0
+20030701
+	Total blockage: 0
+20030702
+	Total blockage: 0
+20030703
+	Total blockage: 0
+20030707
+	Total blockage: 0
+20030708
+	Total blockage: 0
+20030709
+	Total blockage: 0
+20030710
+	Total blockage: 0
+20030711
+	Total blockage: 0
+20030714
+	Total blockage: 0
+20030715
+	Total blockage: 0
+20030716
+	Total blockage: 0
+20030717
+	Total blockage: 0
+20030718
+	Total blockage: 0
+20030721
+	Total blockage: 0
+20030722
+	Total blockage: 0
+20030723
+	Total blockage: 0
+20030724
+	Total blockage: 0
+20030725
+	Total blockage: 0
+20030728
+	Total blockage: 0
+20030729
+	Total blockage: 0
+20030730
+	Total blockage: 0
+20030731
+	Total blockage: 0
+20030801
+	Total blockage: 0
+20030804
+	Total blockage: 0
+20030805
+	Total blockage: 0
+20030806
+	Total blockage: 0
+20030807
+	Total blockage: 0
+20030808
+	Total blockage: 0
+20030811
+	Total blockage: 0
+20030812
+	Total blockage: 0
+20030813
+	Total blockage: 0
+20030814
+	Total blockage: 0
+20030815
+	Total blockage: 0
+20030818
+	Total blockage: 0
+20030819
+	Total blockage: 0
+20030820
+	Total blockage: 0
+20030821
+	Total blockage: 0
+20030822
+	Total blockage: 0
+20030825
+	Total blockage: 0
+20030826
+	Total blockage: 0
+20030827
+	Total blockage: 0
+20030828
+	Total blockage: 0
+20030829
+	Total blockage: 0
+20030902
+	Total blockage: 0
+20030903
+	Total blockage: 0
+20030904
+	Total blockage: 0
+20030905
+	Total blockage: 0
+20030908
+	Total blockage: 0
+20030909
+	Total blockage: 0
+20030910
+	Total blockage: 0
+20030911
+	Total blockage: 0
+20030912
+	Total blockage: 0
+20030915
+	Total blockage: 0
+20030916
+	Total blockage: 0
+20030917
+	Total blockage: 0
+20030918
+	Total blockage: 0
+20030919
+	Total blockage: 0
+20030922
+	Total blockage: 0
+20030923
+	Total blockage: 0
+20030924
+	Total blockage: 0
+20030925
+	Total blockage: 0
+20030926
+	Total blockage: 0
+20030929
+	Total blockage: 0
+20030930
+	Total blockage: 0
+20031001
+	Total blockage: 0
+20031002
+	Total blockage: 0
+20031003
+	Total blockage: 0
+20031006
+	Total blockage: 0
+20031007
+	Total blockage: 0
+20031008
+	Total blockage: 0
+20031009
+	Total blockage: 0
+20031010
+	Total blockage: 0
+20031013
+	Total blockage: 0
+20031014
+	Total blockage: 0
+20031015
+	Total blockage: 0
+20031016
+	Total blockage: 0
+20031017
+	Total blockage: 0
+20031020
+	Total blockage: 0
+20031021
+	Total blockage: 0
+20031022
+	Total blockage: 0
+20031023
+	Total blockage: 0
+20031024
+	Total blockage: 0
+20031027
+	Total blockage: 0
+20031028
+	Total blockage: 0
+20031029
+	Total blockage: 0
+20031030
+	Total blockage: 0
+20031031
+	Total blockage: 0
+20031103
+	Total blockage: 0
+20031104
+	Total blockage: 0
+20031105
+	Total blockage: 0
+20031106
+	Total blockage: 0
+20031107
+	Total blockage: 0
+20031110
+	Total blockage: 0
+20031111
+	Total blockage: 0
+20031112
+	Total blockage: 0
+20031113
+	Total blockage: 0
+20031114
+	Total blockage: 0
+20031117
+	Total blockage: 0
+20031118
+	Total blockage: 0
+20031119
+	Total blockage: 0
+20031120
+	Total blockage: 0
+20031121
+	Total blockage: 0
+20031124
+	Total blockage: 0
+20031125
+	Total blockage: 0
+20031126
+	Total blockage: 0
+20031128
+	Total blockage: 0
+20031201
+	Total blockage: 0
+20031202
+	Total blockage: 0
+20031203
+	Total blockage: 0
+20031204
+	Total blockage: 0
+20031205
+	Total blockage: 0
+20031208
+	Total blockage: 0
+20031209
+	Total blockage: 0
+20031210
+	Total blockage: 0
+20031211
+	Total blockage: 0
+20031212
+	Total blockage: 0
+20031215
+	Total blockage: 0
+20031216
+	Total blockage: 0
+20031217
+	Total blockage: 0
+20031218
+	Total blockage: 0
+20031219
+	Total blockage: 0
+20031222
+	Total blockage: 0
+20031223
+	Total blockage: 0
+20031224
+	Total blockage: 0
+20031226
+	Total blockage: 0
+20031229
+	Total blockage: 0
+20031230
+	Total blockage: 0
+20031231
+	Total blockage: 0
+[0.0035163755847371523, 0.0021260681650402606, 0.0032524119170188395, 0.001573135513314702, 0.0082115525658975688, 0.0067145860919145617, -0.0063454371693261562, 0.00092056867403871164, 0.0096039836680368827, 0.0013993549788541241, 0.00067850407417439278, 0.0099406617066724861, -0.0037239013163778536, 0.0080718123521514463, 0.0089232767325085807, 0.0045567934631107919, 0.0042720894243556034, 0.019262551207780552, 0.0025152224097663577, 0.0025064810057718041, 0.0069647175500905118, -0.0029008653467170109, 0.0042794566451823876, 0.0041740055130546532, 0.019546086563456789, 0.009888079672285879, 0.0025673825344385269, 0.018994009319257744, -0.0073407264393456949, 0.0077297408877440247, 0.0081964733908663785, 0.018456387354622423, -0.011793951451898517, 0.0044750990688601066, -0.038858146835534603, 0.0066846908401943204, 0.0054391268681527718, -0.012481118151842359, -0.0043059564317831514, 0.012232190880715718, -0.023919562015659399, 0.033291824575070364, 0.022616759680250977, 0.0033321288024456908, -0.019688912092574444, 0.01195676400707054, 0.017213468440914169, 0.02154606239436201, 0.018637657186843338, 0.0054765255280665474, 0.003558105416640465, 0.0032042107120006831, 0.021297183941179524, 0.0057704841273003831, 0.0099915205797373469, 0.0051636865670346439, 0.017542158255256395, 0.015228173449605718, -0.016150439766003218, -0.046663814060156697, 0.0034939245571502719, 0.0093614425795272935, 0.019660882998399656, -0.0028347008825369323, 0.0088933803853952012, 0.022455054372317259, 0.0044300569716716051, 0.011338421831089459, 0.014515667813398253, -0.00043172015796947866, 0.054943029504741919, -0.010769083183458778, 0.018065213074601218, 0.0090261457145191671, 0.0071003841198558496, 0.0015529903077482604, 0.016443901006530669, 0.024772798086081401, -0.0002958009882387077, -0.0089934021027038083, 0.0086391738640975973, 0.0095823491364738465, 0.0024685439989596673, 0.0084559437074778702, -0.0088996351904091428, 0.0013425101852680885, 0.002157740370619254, 0.0051244430725785606, 0.011076397743287992, 0.0071235611704888735, 0.024341360989904519, 0.0069032144924891705, 0.0035623233652883838, 0.004861005214940606, 0.012217114936661694, 0.021574794640887584, 0.0053661170707158968, -0.00034141386495656638, 0.0008748692002042808, 0.007001396043502181, -0.012073543453791974, 0.0011100898930256323, -0.0066673584824956649, 0.0050846244424416816, -0.0030652533031985895, 0.0062428047006841082, 0.010852802976833205, 0.0040390566989525149, 0.010914894549673836, -0.0017705073318103315, 0.019844875764012948, 0.00046605965049945498, 0.014245429915204775, 0.016883715152592221, 0.10491269743550492, 0.01045735208962913, 0.0025936247393096579, 0.00036670526788119161, 0.0016533814053225717, 0.0068327151546877848, -0.0078630671796401479, 0.0003150001808478268, 0.019833070176754512, -0.00032171553382814264, 0.0084157292452502423, 0.022253391268046162, 0.00015288827614482167, 0.014163364367060874, -0.0011421292321018421, 0.0036869830597535055, 0.0060235573336110014, -0.0022848792157154538, 0.0082841232100785665, 0.0035461151629751714, -0.0062139631291346104, 0.026673209022706083, 0.012076645609503549, 0.0092357962942945203, -0.005443471855820294, -0.00079676384077895018, 0.0093141350871117669, -0.00045878754662424093, -0.0006029108938844605, 0.0026880662496582032, 0.0023958537005559369, 0.013609748568828557, 0.017682608847077539, 0.0064509164698314091, 0.0045773427963030494, 0.0060543108146091772, -0.012816693276904271, 0.0031187718810771438, 0.0016843470433377289, 0.0069572658362897603, 0.0075060964444060756, 0.01762703372478068, 0.0014339785253615015, 0.0057579259379467928, 0.0032809746142647175, 0.006913960186436109, 0.0042618156362232975, 0.0030984346105297675, 0.011313886018864716, 0.0065389643346404633, 0.0012698066435973643, 0.0036536803971679009, 0.0048901173973670154, -0.0033502174107449215, -0.0046036813175547031, -0.00107390507937546, 0.0058575792623048548, 0.0039156421742936615, 0.0088401369527439533, 0.0075923775694117148, 0.0027014742373517244, 0.0076798734913320317, -0.0012108247746232526, -0.010049041058577787, 0.0022968291809767638, -0.011619793568319312, 0.014598376791991887, 0.034079652910149159, 0.014624231912823865, 0.007180968020844134, 0.015535667623842519, -0.032627705918113467, 0.031178505596262267, 0.014320031148220193, 0.0015225011231653107, -0.0078779576653022904, 0.010829513286548844, 0.0011475853312406183, -0.0037827179827640152, 0.013344365268156957, 0.029873268569155564, 0.026760063879989086, 0.0018528445747430201, 0.023902116700608649, 0.018541206156917421, -0.0056921659708692, 0.011111512107102707, -0.0050005658805606108, 0.018347525957314662, 0.0035183246156434279, 0.018608235492703882, 0.0060603990432835635, 0.016245305514251469, -0.0024498189124033073, 0.0060763214057190521, 0.021267017284283589, 0.020781628566929989, 0.0026665117995386197, 0.012738356109352039, -0.0084022030461693795, 0.016294073530477651, -0.0056064935684097764, 0.010914132502380949, -0.0077355367708069091, -0.0046214464813343114, -0.0021509816370243072, -0.063632835880014865, 0.017103949963153547, 0.0033452344398013007, -0.0028027202222900643, 0.0026023100672907711, 0.014405426771263514, 0.0049451930866362508, 0.01990022831055737, -0.019104198821536376, 0.011112672356475312, 0.0062084451826288651, -0.0018389783735403987, -0.0025530561626231109, 0.017783584621166602, 0.0065174184639437745, 0.048386547379204885, -0.0087690865118915176, 0.031032584814695226, 0.0011375610622693848, -0.00026597202390315718, 0.016238815864168189, 0.004820391952960283, 0.0063385011351900196, -0.010181156813625912, -0.01278215319956363, 0.0008906060729041473, 0.008334930591002352, 0.0026292934158746182, -0.0020833582503465005, 0.023082984454199866, 0.033640483187365386, 0.010793967032830185, 0.023783494430526669, 0.002778255199519521, -0.0011164202077092106, 0.021273447464656595, 0.020284498541390125, 0.014166484431865084, 0.016276897795471125, 0.0018045923010058845, -0.0089088789304431499, 0.0067274786666969878, -0.0016791544554267473, -0.0091269529697577522, 0.072916223998416491, -0.0077693685300282934, 0.022110006970544775, 0.00033066987929532851, 0.0036891731890779625, -0.017506941741871899, 0.0064464147185454594, 0.0043656054252096625, -0.020723789876687649, -0.019444165077594912, -0.0091105717959821132, 0.024330275595112433, 0.0073676976678209603, -0.00095079240737455596, 0.005034060154104323, 0.0018901938384684744, 0.036187752931630054, 0.0029785604628765204, 0.021331251095981406, -0.0055997028700544432, 0.021315090626949796, 0.037826429542104002, 0.022406200818211729, 0.0048976551493099298, 0.010366150390793851, 0.018801397250475953, 0.0058522227157577151, 0.033220688611694277, -0.00075782148736478741, 0.001231161575318685, 0.018557396647109179, -0.0016303312138131955, 0.0059577806299132129, -0.022422930236849058, 0.02917847435361217, 0.022849669082741348, 0.0059827159847586388, 0.0044568073903205035, 0.006107424120307567, 0.010165862753876383, -0.01772918180141125, 0.02561299968651894, 0.015034780788092915, 0.00024007838129660352, -0.015238993443890354, -0.0022680662031158705, 0.029267411828728055, 0.006843147718865141, 0.008901213689702793, 0.051352501989499602, -0.017970092749544284, -0.011694845636956325, 0.010918391881985578, -0.014220308368560426, 0.0097289205785596623, 0.028293701277556937, -0.0023279668656038719, 0.019886511073081554, -0.032793211176336032, 0.0090240939623696809, 0.011629798346878656, 0.027775326910854631, -0.00069348410977973052, -0.010955114262657212, 0.025311724580807153, 0.0028981472053089762, 0.010063743994672291, 0.0065100453345784803, 0.0063231322818966635, -0.010856733285148926, 0.029356870335420625, 0.0084007874999505235, 0.0049751003511673076, 0.036211123872409282, 0.0022706160683452162, -0.0068658555378660856, 0.010527939348143407, 0.010359933259382595, 0.017465268593991792, 0.0027053821810342298, 0.0030300015482631819, 0.018381622567760332, 0.0057838286786889006, -0.008722087381585272, 0.011155777855218461, 0.0018531596063948528, 0.003135479746602761, -0.0040415406261023685, 0.0065746939953541476, 0.0053616590194117946, 0.0039862307064637394, -0.00072115206316131588, -0.00053430971722818619, 0.0026095543513079936, 0.01881730275723037, -0.0020126653674984495, 0.010858564770426953, 0.0054087546574167001, 0.001163624571554604, 0.010584313100317502, 0.0071940338969020048, 0.0079532826809036606, -0.00044394793269071192, 0.028588908687769213, 0.013974573110041617, 0.010418560610354663, 0.00056235533853801409, -0.02391794250140758, 0.013709550229706765, 0.016202438778397266, -0.0020469408803812606, 0.0086277711180714669, 0.0027494642159689325, -0.020679002143571979, 0.006050452014877577, 0.01743659393889168, -0.00084199964265025274, 0.003930181450280382, 0.0031678357176391286, 0.00097556935435860737, -0.0060312913021242686, -0.014358267297861405, 0.029058424300374155, 0.0023808330222292689, 0.010287455644292695, -0.0053401395754948192, 0.0039397000225138154, 0.0071328626764417449, -0.0008772825478622476, 0.0083216242614649275, 0.013479254705129342, -0.0023914539865491076, 0.007723159094393731, 0.0053450009103212515, 0.0046380695091188138, -0.00030126096338041361, 0.0033092477689790544, 0.0085629868226433578, 0.010908350270670393, 0.0040204319606269969, 0.012168228443695847, 0.0091838196613012544, 0.0094044904323286466, 0.0074354287398150426, 0.0089417579594020073, 0.0013062527251810764, -0.0027305195796621233, 0.0055285041454249942, -0.0054206660065441352, 0.0052020257611806522, 0.010664255147560359, 0.010257016981121133, -0.0011844092702412577, 0.013415710957417623, -0.0034927451217186536, 0.00032366056074635476, -0.019364307421690392, 0.010129998852671736, 0.014271989068737017, 0.014610774674435051, 0.028200870850098474, 0.0010116392844035527, 0.0040983752352171353, 0.036585798504873202, 0.0032996349235945299, 0.00055374779942847453, 0.0073500481982768963, -0.0014948745482232318, -0.011989818200308228, 0.007862525659575112, 0.0064698774478346831, 0.02830370312036248, 0.0098865885145953333, 0.020881619072407182, 0.019292467882505313, 0.009863027028952474, 0.022407997565368192, 0.0059704456225775819, 0.0038796430988470103, 0.012224080594091653, 0.0077387175028386128, 0.015114534224107832, 0.008095805256895329, 0.0065301874742582601, 0.0037062859946381107, 0.0055988257940342099, 0.0010908316383487679, 0.019639540383400347, 0.012101656170797677, -0.0012460462982149018, 0.0055947861062637279, 0.035463738615321566, 0.0056835773854504246, -0.00012904904174076349, -0.0044435951258241816, 0.007281530404486967, 0.0042767377313210645, 0.0011385729692042564, -0.00096391822352801643, 0.0061031651724545418, -0.0051461242522510709, 0.0011822770988448828, -0.0026994092480665944, 0.0011370517407505694, -0.0024263037498603581, -0.0058614749123088459, 0.014667854018906393, 0.0012613560604596823, 0.0092987540056275169, 0.011311977446170469, -0.0025138749179222969, -0.0028053604079840921, -0.0062166087949042798, 0.0055064392251992934, -0.0023134464636595364, 0.0015155388960921134, 0.015964777774396772, 0.0049014363703409163, 0.015713418299636635, -0.0030561260861748816, 0.0019107683011476506, -0.0049124069194108584, 0.00016343899948465258, 0.0096934864499301828, 0.0031590446749022818, 0.0011184695281413475, -0.00021276901832536179, 0.0055701391440092837, 0.00410385140879602, 0.00036408422662714823, -0.00032763946474558524, 0.003373551646360618, 0.00613475112325855, -0.0096851617566647581, -0.0046500398598422737, 0.018186100882036628, 0.01198470073115598, -0.0055575259522224916, -0.00064967272109265012, 0.0003980763607648913, 0.0057649482055481512, 0.0063014140059011467, 0.0020370675127072062, -0.0021544039498020882, 0.00088380330288898717, 0.00290712045954046, 0.0068731373059399371, 0.0086796117859138117, -0.0022328706467434857, 0.0091308573576993866, 0.011738764857898069, 0.0084612474118225638, 0.0031794449247531447, -0.0056107922973916884, 0.0047498584152058576, 0.0032144522580547842, -0.0031940644320739677, 0.0032375390361077954, 0.0046356188491984088, 0.01971218614864037, -0.0028389522255092064, -0.0012575055419673238, -0.00067253639139783607, 0.010381970116625002, 0.0046098445562559494, 0.0042337921391451721, -0.0010475616228673578, -0.0076304519729279013, -0.0042752479782925011, -0.0072817599726970363, 0.02238508271598557, 0.012662112113044334, -0.00021884462398826378, -0.0026038631603684851, -0.012561041725397395, -0.012076630757603197, 0.0051818715040212893, 0.0086253654843246857, -0.0010956911124979719, 0.007681388393596133, 0.0017970618313701526, -0.0048734102522878901, 0.0031640159316210191, 0.0068463366516046684, -0.00023524546321257263, 0.0006303977099170585, 0.0046513674616886665, 0.00052741055129249654, 0.00037717219256280527, 0.005560576144302283, 0.0023646516083212143, 0.0025098267844270968, -0.00061035215773561568, 0.010655983820188094, -0.0062243712890563121, 0.0046491530330489998, 0.0071603810693836234, -6.6069409390726296e-05, 0.0079670232308263478, 0.002404052983305917, 0.0010860564871965198, 0.0027480416995234319, -0.0077830205148917628, 0.0045904405214331704, -0.0044496415062725636, -0.00038825550240846135, 0.004516059012267871, 0.0098061157138006928, 0.003392277574298358, -0.00026433552281312578, 0.011496282174286552, 0.0019214946694489005, 0.0085914407888611679, 0.01651162673168555, 0.0032259526021388273, -0.0016428630216164938, -0.0097826623355426259, -0.0061816220766393306, 0.0051169145272506036, 0.0099345816414954467, -0.029561689539324577, 0.0069366668850070479, 0.0097960380469480444, -0.0056728600295081824, -0.006479535598944975, 0.0017844936979292834, 0.00054866948030925873, 0.014357776727146936, 0.0049405430742736813, 0.010556318041995007, 0.01203408742682808, -0.0066690841955608232, 0.0025709184435804451, 0.0010560847179576943, 0.0029574050238675969, 0.0088489820784401606, -0.00017271361192999765, -0.0019363575022273685, 0.00060251961797243053, -0.0051926073235181282, -0.0058210434977580394, 0.018505578481713497, 0.013350491862723302, 0.018154900477476449, 0.0036585905116187632, -0.0010085884016865728, -0.00087030661371729633, -0.0012651982743371881, 0.0098012253566974912, -0.0039319877300376307, 0.0004485761680082975, 0.0043958459031911215, 0.015465298678824294, 0.013523780183491388, 0.049430129301130367, 0.0083548243256963868, -0.0057103459664035209, 0.023196566993893893, 0.010221454156572949, 0.033061720284552829, 0.0024944312751131489, 0.0032590969275782798, 0.0037745069772436692, 0.0060274769432238128, 0.015616209720980987, 0.0051786234973669508, 0.023530130924184493, -0.0062010791102699581, 0.011257162100438126, -0.0010842098906327161, 0.0078337159261256256, -0.0088386402214038033, 0.0057649533015252359, 0.02465203127838032, -0.017459879730750485, -0.0027465349508994301, 0.0034833102405864478, 0.015534322927263228, 0.0044065078205978133, -0.015888550218275888, 0.003095544726550682, 0.019480303260639379, 0.0078229110131099542, 0.020961330201729481, 0.014755690170277858, 0.015652281794331764, 0.0099458701612180501, 0.0056462144847352798, 0.012399694946749128, -0.0089986397485852868, 0.0044748372578756667, 0.0085127993839720483, 0.0032386758002932296, 0.0076431130085201646, 0.003700422104529034, 0.0030829195315103938, 0.0047271314814326835, 0.0078740920887979925, -0.0045263021110479845, 0.016640164009211884, 0.0070862259366873135, 0.0080928670078080599, -0.0065560862294029914, 0.0050604954831853519, 0.00719859183741808, 0.021614246946062825, 0.0069133011151958652, 0.0088680213752968685, -0.01522607563405334, 0.0011651703796373778, -0.003917848099240802, 0.0060931144160182521, 0.048564355264060541, 0.0054450014448960962, 0.048577525650762898, 0.009711725942753038, 0.0077015528143229159, 0.00089099257173626853, 0.0083281516417969947, -0.0036697895191776593, 0.0055518128750814653, -0.015204719627221339, -0.0037193604222119452, -0.0054263937436321366, -0.016139166798687578, 0.0029207821251998945, 0.0038982459639694102, 0.011035759755273055, 0.00049897606194195909, 0.0014975731839869571, 0.022679795046786508, 0.0021511346899715554, -0.0054596923673074695, 0.006979083995402262, 0.0072388915599681013, 0.032530345261617591, 0.013393322356443868, 0.01448588420819129, 0.019525003093663448, 0.013853691643774499, 0.02047847653561756, 0.006015773440708666, -0.038197454520806945, 0.0078683663752039668, 0.22758235285283818, 0.0034628319053373112, -0.0042945990412505911, -0.0051770235717702451, -0.00038444105429444303, 0.0097996946332350385, -0.0044788635810191595, -0.0064681882457176005, 0.014023391367638386, -0.0035423194824630217, 0.014144399753812232, -0.0035554526425654004, 0.0091808131146279993, 0.0020123238918884029, 0.010531640128965078, 0.012224725502799386, -0.0037279911656769127, 0.023657051596008047, 0.0055986512454605803, 0.02796844458426859, 0.013770340222892511, -0.0036490886261472048, 0.0067889488761866288, 0.014501164343750773, 0.0066797557360016762, -0.0069283051271627994, -0.00044788196837498194, 0.0088478407150628224, 0.0072147308235860257, 0.0018072396654853239, 0.0026046212674160902, 0.0078147563734721984, 0.0077218934451997118, -0.0015063544671504259, 0.003331139636875354, 0.021333367790399342, 0.0024836875159781526, -0.0015260618661986458, 0.0069126711627341452, 0.0086276684533697842, 0.0045213999411787432, -0.0072441029662932985, -0.0018222367973727645, -0.00019393258601142023, 0.0046150611703057419, -0.00030035713752631879, -0.0011552036355798592, 0.018748734021034566, 0.013901546166540431, 0.0092355374221234094, 0.010207555105035682, 0.010315828612589957, -0.0039546433476246685, -0.00073714673406277307, 0.0071272609586737227, 0.0018203320131534861, 0.0058312392861334557, 0.0080185380977237722, 0.0029816793240175451, 0.0032418557299576331, 0.0081495372115720117, 0.0069061164733275381, 0.0084616437783433546, 0.00609687289074982, -0.0042979336082041332, 0.011571130121173711, 0.0075210930004354169, 0.00079520323116813918, 0.0040013623167023914, 0.002124270498117635, 0.0093706971091628219, -0.0041317453750199335, -0.0064036181405323234, -0.0006677414575096606, 0.0057423777493300372, 0.012518291624259457, 0.0023506726367848617, 0.0058046706016640437, 0.0058254000240794785, -0.0010231700991362685, 0.00041810074028619402, 0.0065927524690872485, 0.0028321246036268309, -0.0054071281914455215, 0.0061589932089596393, 0.0089704038213020039, -0.00031048367839945251, 0.0088532850022346957, 0.0059501929981755058, -0.01342154077134548, 0.0033862518441441806, 0.026455852567594817, 0.0027322958976227683, 0.0039006824744923312, 2.6122276703544448e-05, -0.0021633266334028216, 0.005074325512962676, 0.0029415023173693378, 0.0071031430559082035, 0.011783617545778988, 0.0056899675471934769, 0.01736885072156551, 0.0056970929605311277, -0.0065192804774621164, -0.0022978692384265048, 0.01777492515257284, 0.013210706322973484, 0.0026116505467741677, -0.0010715371582803615, 0.0069788441658300915, 0.0060359081988661514, 0.0059145084811622721, 0.0069135600147100084, -0.0031990739509741521, 0.012544840721484467, 0.0010979169323350525, -0.0011210395564430025, -0.011445164652473463, 0.0024177470195800902, 0.0037878191146708574, 0.0012481368809290738, 0.013743862215312156, 0.0084081014920189198, 0.0041427604712919331, 0.0033563946856380016, -0.0011399164645937848, 0.026442744495507816, 0.0033794205191757477, 0.0075443822558157892, 0.0017045852982781509, 0.012889706490021007, 0.0030491480605997008, -0.00040008354404554806, 0.0018295004633399319, 0.0066678797142940803, 0.0091409936032915851, 0.02019833112396725, 0.016479292841438994, 0.0042829223027122604, 0.00028912507434221142, 0.002424692006120807, 0.001396784084071182, 0.0087434092713271766, -0.0044920075627622917, 0.0029891848533782103, 0.018497128046539413, -0.014062468734349296, 0.013987320066944692, 0.015079701672480107, 0.0046814423831842309, 0.025842584043074556, 0.0095177303704163455, 0.0038809721366013139, -0.0079456566459090109, 0.01521821038674801, 4.984482735396185e-05, 0.0061442956562171745, 0.00062912164191525029, 0.0077372551795035598, 0.0096035239932019817, 0.007700610482090431, 0.0028237162079486674, -0.0038546803113165312, 0.0025113629484723116, 0.007043909514523509, 0.0082896810787504802, 0.0061418102122390824, -9.1507755234069432e-05, -0.0030463716821185031, -0.0098264007776037235, 0.0052102066341327413, 0.014959899645840576, -0.007584654446407795, 0.0078289188712230232, 0.016449718664079391, 0.0049466992300335431, 0.003846170133787347, 0.015177108297754874, 0.0050662665335847916, 0.0076803655943198214, 0.0093047525683449522, 0.0073733784077021332, 0.0058986624712909835, -0.014909521954661336, 0.0052960542611061113, 0.0092346623178850232, -0.01164446697087531, 0.017219407032923739, 0.00041950597533818514, 0.019581019208479863, -0.0043325309807292949, 0.0015064479750682839, 0.0034007749728464129, 0.0019832857761045964, 0.0074901717844029908, 0.0058024258880154233, -0.00070346253422967327, 0.00016094203119806547, -0.008679959322249603, 0.0018536281262311509, 0.0039122878395598517, 0.0072917513046573002, 0.011556885432024426, 0.0086334103539861002, 0.0083982300851595023, 0.0085460568347162352, 0.010710188557411971, 0.005594172675539728, -0.0018822363273986271, -0.004504017409804442, -0.0071798639918046522, 0.0046347069595616278, 0.0013295133446101014, 0.002235621111067964, -0.002107487600366401, -0.0049818567963527361, 0.010977298299772625, 0.0093912483666107483, 0.010984546134684706, 0.0069257673367452048, -0.0022289757145058874, 0.013894882345483282, 0.0029177086236678979, 0.0051560359089887807, -0.016100781265603051, 0.009372592755319405, 0.0088201282771906628, 0.01053372847574066, 0.0023440830786831263, 0.0085572829475879832, 0.012751848763071541, 0.0035600733023911221, -0.0024372527662279552, 0.0065409842265263043, -0.0016512281764105039, 0.004427456561673879, -0.0031487685143933601, -0.0029447010537134665, 0.0028013745226575211, 0.010546309240568459, -0.0083390476571055753, 0.0074006640433479645, 0.0038987712683990184, -0.0037763505197137407, 0.0029938118844789539, -0.0018905533344669046, 0.0062109858594648782, 0.0032963310684377412, 0.00055839585281350194, 0.03473365254810349, 0.014473388048077568, 0.011429602043213199, 0.0019146320259674423, 0.0057151575248074651, 0.0019787497279648192, 0.0049332352269621698, 0.0017622084732494354, 0.0035811376549851146, 0.0048656211380597014, 0.0043780943849080151, -0.00014741641483850988, -0.0026272549798139894, 0.0045944089501075373, 0.00022598867445131681, 0.0022441307796872015, 0.0086138125274891411, 0.0032659154951510836, -0.0033044554455414713, 0.0071518204781691611, 0.0078945631323858855, 0.020695779758062718, 0.0041905550683406026, 0.006122528023732342, 0.00291945139951744, -0.0014220570916992767, -0.0022365295459394622, 0.018589453411125764, 0.0094472217835426271, 0.0091594685304078449, -0.0012346350747811977, 0.0087206072240690723, 0.017725326213319494, -0.001283399335766711, 0.0039567788990175689, -0.003940781077742702, 0.0027155069593802319, 0.0073909351436993679, 0.012351778792881392, 0.0044202099256057791, 0.0067691795343281938, 0.0059178989652177907, 0.0041494903869366368, 0.0056347414841987449]
+ret: 0.00564824537895
+std: 0.0133087581709
+6.73715117127
