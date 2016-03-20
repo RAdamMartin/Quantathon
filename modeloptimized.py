@@ -5,6 +5,7 @@ import numpy as np
 import sys, getopt, math
 from scipy import optimize
 import weightings as wgts
+import datetime
 
 def sharpe_ratio(gains):
     return math.sqrt(252)*sum(gains)/len(gains)/np.std(gains)
@@ -51,6 +52,7 @@ def main(argv):
     i = 1;
     for line in src:
         arr = line.split(', ')
+        mkt.date = datetime.datetime.strptime(arr[0],"%Y%m%d")
         for j in range (1, len(arr), 6):
             mkt.update_stock(int(j/6), arr[j:j+6])
         if i > 2:
@@ -61,13 +63,13 @@ def main(argv):
         #     break;
     src.close() 
 
-    wgt = wgts.PartTwoThreeWeight
-    # alphas = np.random.rand(12)
-    # alphas = map((lambda x : 1000*(x-0.5)), alphas)
-    alphas = [-8.77519381e+05, 9.14005195e+05, 4.27731027e+05,
-        -1.45712088e+07, 1.06063059e+01, -1.26390855e+01,
-        1.64257209e+00, -4.03828123e+01, -2.25249306e+01,
-         2.19522184e+01, 2.18636677e+01, 2.25134671e+01] #6.7 From Powell
+    wgt = wgts.PartFourWeight
+    alphas = np.random.rand(12)
+    alphas = map((lambda x : 1000*(x-0.5)), alphas)
+    # alphas = [-8.77519381e+05, 9.14005195e+05, 4.27731027e+05,
+    #     -1.45712088e+07, 1.06063059e+01, -1.26390855e+01,
+    #     1.64257209e+00, -4.03828123e+01, -2.25249306e+01,
+    #      2.19522184e+01, 2.18636677e+01, 2.25134671e+01] #6.7 From Powell
     # alphas = [1.41538746e+12 , -1.72222380e+12  , 2.57813351e+12 , -1.79483444e+17,
     # 1.98851186e+10 , -1.82425433e+10 , -2.27162625e+10 ,  3.17193513e+11,
     # 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09  , 5.44634656e+09, 0.0, 0.0]
@@ -83,8 +85,8 @@ def main(argv):
     #     -3.00192275e+01,   1.85853877e+03,   1.08544918e+03,
     #     -2.31144825e+03,  -1.14817264e+03,   1.00000000e+00,
     #      1.00000000e+00,   1.00000000e+00,   1.00000000e+00]
-    func = lambda x : get_result_from_alphas(hist, wgt, x, start=1, check_fill=False, exclude_inds=False)
-    res = optimize.basinhopping(func=func, x0=alphas, niter=40, niter_success=20, minimizer_kwargs={"method": "Powell", "options": {"maxiter":100}})
+    func = lambda x : get_result_from_alphas(hist, wgt, x, start=1, check_fill=True, exclude_inds=True)
+    res = optimize.basinhopping(func=func, x0=alphas, niter=40, niter_success=10, minimizer_kwargs={"method": "Powell", "options": {"maxiter":100}})
     # res = optimize.differential_evolution(func, bounds)
     # res = optimize.minimize(fun=func, x0=alphas, method='Powell', maxiter=50)
     # print(res)  

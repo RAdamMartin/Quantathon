@@ -4,6 +4,7 @@ import stockmarket as sm
 import weightings as wgts
 import numpy as np
 import sys, getopt, math
+import datetime
 from scipy import optimize 
 
 
@@ -27,6 +28,7 @@ def get_result_from_alphas(src, dst, alphas):
         if i >= start:
             arr = line.split(', ')
             dst.write(arr[0] + ',')
+            mkt.date = datetime.datetime.strptime(arr[0],"%Y%m%d")
             for j in range (1, len(arr), 6):
                 mkt.update_stock(int(j/6), arr[j:j+6])
         if i > start+2:
@@ -39,7 +41,8 @@ def get_result_from_alphas(src, dst, alphas):
             dst.write(str(delta)+',')
             gains.append(delta)
             dst.write(str(sum(gains))+',')
-            dst.write(str(vals[1])+',')
+            dst.write(str(vals[1])+',') #denom
+            dst.write(str(vals[4])+',') #sumfills
             dst.write(str(abs(delta)/delta)+',')
             for w in vals[2]:
                 dst.write(str(w)+',')

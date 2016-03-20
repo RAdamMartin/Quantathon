@@ -46,4 +46,10 @@ class PartFourWeight(sm.Weighting):
         # weight += self.alphas[13]*stk.rco(0)
         # weight += self.alphas[13]*rvp/stk.AvrRVP
         # weight += self.alphas[14]* 
+        if (weight < 0 and mkt.date.isoweekday() == 5):
+            weight*=1.2
+            if mkt.date.day < 24:
+                weight*=1.2
+          
         return weight
+            

@@ -2,6 +2,7 @@ from abc import ABCMeta
 import numpy as np
 import math
 import copy
+import datetime
 
 class Ticker(object):
     def __init__(self):
@@ -120,6 +121,7 @@ class Market(object):
         self.AvrROC = 0
         self.AvrRCO = 0
         self.AvrRCC = 0
+        self.date = datetime.date.today()
         for i in range(n):
             self.stocks.append(Stock(0))
             self.weights.append(0)
@@ -182,6 +184,7 @@ class Market(object):
         denom = 0
         weights = []
         deltas = []
+        sumfills = 0
         for i in range(self.n):
             stk = self.stocks[i]
             delta = stk.roc()
@@ -194,7 +197,8 @@ class Market(object):
             if (not check_fill) or (ind*weight > 0) : 
                 total += weight*delta
                 denom += abs(weight)
-        return (total, denom, weights, deltas)
+                sumfills += weight
+        return (total, denom, weights, deltas, sumfills)
         
 class MarketHistory(object):
     def __init__(self):
