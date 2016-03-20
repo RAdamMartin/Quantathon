@@ -6,7 +6,7 @@ class PartOneWeight(sm.Weighting):
         pass
     
     def get_weight(self, mkt, stk, n=100):
-        return -(1/n)*(stk.rcc()-mkt.AvrRCC)
+        return -(stk.rcc()-mkt.AvrRCC)/n
         
 class PartTwoThreeWeight(sm.Weighting):
     def __init__(self, alphas):

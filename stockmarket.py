@@ -180,11 +180,11 @@ class Market(object):
             if (not check_fill) or (ind*weight > 0) : 
                 total += weight*delta
                 denom += abs(weight)
-            else :
-                blocked += weight*delta
-                print("Blocked " + str(i) + " with weight " + str(weight) + " delta :" + str(delta))
+        #     else :
+        #         blocked += weight*delta
+        #         print("Blocked " + str(i) + " with weight " + str(weight) + " delta :" + str(delta))
             
-        print("\tTotal blockage: " + str(blocked))
+        # print("\tTotal blockage: " + str(blocked))
         return (total, denom, weights, deltas)
         
 class MarketHistory(object):
